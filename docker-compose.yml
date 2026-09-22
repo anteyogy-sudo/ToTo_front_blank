@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+    frontend:
+        build:
+            context: .
+        container_name: frontend
+        restart: unless-stopped
+        tty: true
+        environment:
+            - ./.env.local
+        expose:
+            - "3000"
+
+        networks:
+            - traefik
+        labels:
+            - traefik.enable=true
+            - traefik.http.routers.frontend.rule=Host(`front.netvol.org`)
+            - traefik.http.routers.frontend.entrypoints=web
+            - traefik.http.services.frontend.loadbalancer.server.port=3000
+
+networks:
+    traefik:
+        external: true

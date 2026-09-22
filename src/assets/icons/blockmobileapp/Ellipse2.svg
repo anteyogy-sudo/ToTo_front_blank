@@ -1,0 +1,20 @@
+<svg viewBox="0 0 439.051 522.449" xmlns="http://www.w3.org/2000/svg" width="439.050781" height="522.449219" fill="none">
+	<defs>
+		<linearGradient id="paint_linear_0" x1="151.201706" x2="151.201706" y1="-1.36142945e-14" y2="444.676575" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(215,212,249)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(183,206,242)" offset="0.43409723" stop-opacity="1" />
+			<stop stop-color="rgb(142,177,234)" offset="1" stop-opacity="1" />
+		</linearGradient>
+		<filter id="filter_0" width="263.070312" height="302.187500" x="81.769531" y="165.503906" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feBlend result="shape" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" />
+			<feGaussianBlur stdDeviation="24.4235592" result="effect_layerBlur_1" />
+		</filter>
+	</defs>
+	<g id="Группа 1">
+		<path id="Ellipse 1241" d="M302.403 222.338C302.403 345.132 234.708 444.677 151.202 444.677C67.6953 444.677 0 345.132 0 222.338C0 99.5442 67.6953 0 151.202 0C234.708 0 302.403 99.5442 302.403 222.338Z" fill="url(#paint_linear_0)" fill-rule="evenodd" transform="matrix(0.936596,-0.350412,0.350412,0.936596,0,105.965)" />
+		<g filter="url(#filter_0)">
+			<ellipse id="Ellipse 1242" rx="89.636803" ry="37.587246" cx="89.6368027" cy="37.5872459" fill="rgb(126,146,255)" transform="matrix(0.547,0.837133,-0.837133,0.547,195.738,221)" />
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,81 @@
+<svg viewBox="0 0 805.238 434.867" xmlns="http://www.w3.org/2000/svg" width="805.238281" height="434.867188" fill="none">
+	<defs>
+		<filter id="filter_0" width="314.839844" height="233.953125" x="490.398438" y="53.308594" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feBlend result="shape" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" />
+			<feGaussianBlur stdDeviation="24.1268826" result="effect_layerBlur_1" />
+		</filter>
+		<filter id="filter_1" width="313.898438" height="214.820312" x="148.738281" y="185.796875" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feBlend result="shape" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" />
+			<feGaussianBlur stdDeviation="24.1268826" result="effect_layerBlur_1" />
+		</filter>
+		<g id="pixso_custom_effect_2">
+
+		</g>
+		<filter id="filter_2" width="223.679688" height="282.496094" x="378.089844" y="134.437500" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feBlend result="shape" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" />
+			<feGaussianBlur stdDeviation="24.1268826" result="effect_layerBlur_1" />
+		</filter>
+		<filter id="filter_3" width="314.839844" height="233.953125" x="0.000000" y="200.914062" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feBlend result="shape" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" />
+			<feGaussianBlur stdDeviation="24.1268826" result="effect_layerBlur_1" />
+		</filter>
+		<filter id="filter_4" width="130.683594" height="99.996094" x="257.792969" y="212.273438" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feBlend result="shape" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" />
+			<feGaussianBlur stdDeviation="10.0443459" result="effect_layerBlur_1" />
+		</filter>
+		<filter id="filter_5" width="343.746094" height="301.703125" x="53.996094" y="0.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feBlend result="shape" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" />
+			<feGaussianBlur stdDeviation="28.4599209" result="effect_layerBlur_1" />
+		</filter>
+		<filter id="filter_6" width="217.578125" height="209.023438" x="322.789062" y="33.503906" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feBlend result="shape" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" />
+			<feGaussianBlur stdDeviation="18.3483276" result="effect_layerBlur_1" />
+		</filter>
+		<filter id="filter_7" width="176.769531" height="233.359375" x="403.953125" y="51.402344" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feBlend result="shape" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" />
+			<feGaussianBlur stdDeviation="18.3483276" result="effect_layerBlur_1" />
+		</filter>
+		<filter id="filter_8" width="176.769531" height="233.359375" x="416.796875" y="24.726562" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feBlend result="shape" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" />
+			<feGaussianBlur stdDeviation="18.3483276" result="effect_layerBlur_1" />
+		</filter>
+	</defs>
+	<g id="Группа 4">
+		<g filter="url(#filter_0)">
+			<ellipse id="Ellipse 1232" rx="88.547897" ry="37.130634" cx="88.5478973" cy="37.1306343" fill="rgb(23,159,249)" transform="matrix(0.951634,0.307234,-0.307234,0.951634,574.961,107.746)" />
+		</g>
+		<g filter="url(#filter_1)">
+			<ellipse id="Ellipse 1232" rx="88.547897" ry="23.189377" cx="88.5478973" cy="23.1893768" fill="rgb(127,73,255)" transform="matrix(0.951634,0.307234,-0.307234,0.951634,228.547,243.934)" />
+		</g>
+		<g filter="url(#filter_2)">
+			<ellipse id="Ellipse 1240" rx="74.806404" ry="26.503519" cx="74.8064041" cy="26.5035191" fill="rgb(60,81,241)" transform="matrix(0.417899,0.908493,-0.908493,0.417899,482.746,196.648)" />
+		</g>
+		<g filter="url(#filter_3)">
+			<ellipse id="Ellipse 1239" rx="88.547897" ry="37.130634" cx="88.5478973" cy="37.1306343" fill="rgb(73,85,255)" transform="matrix(0.951634,0.307234,-0.307234,0.951634,84.5625,255.352)" />
+		</g>
+		<g filter="url(#filter_4)">
+			<ellipse id="Ellipse 1232" rx="36.010246" ry="18.359970" cx="36.0102463" cy="18.3599701" fill="rgb(0,92,167)" transform="matrix(0.969633,-0.244566,0.244566,0.969633,283.727,253.277)" />
+		</g>
+		<g filter="url(#filter_5)">
+			<ellipse id="Ellipse 1245" rx="93.601135" ry="54.798130" cx="93.6011353" cy="54.79813" fill="rgb(74,196,231)" fill-opacity="0.400000006" transform="matrix(0.881507,0.472171,-0.472171,0.881507,169.234,58.3516)" />
+		</g>
+		<g filter="url(#filter_6)">
+			<ellipse id="Ellipse 1232" rx="67.340080" ry="28.237597" cx="67.3400803" cy="28.2375965" fill="rgb(21,150,205)" transform="matrix(-0.747683,0.664055,-0.664055,-0.747683,500.68,114.41)" />
+		</g>
+		<g filter="url(#filter_7)">
+			<ellipse id="Ellipse 1247" rx="67.340080" ry="19.350866" cx="67.3400803" cy="19.3508663" fill="rgb(37,125,173)" transform="matrix(0.420803,0.907152,-0.907152,0.420803,481.555,98.8516)" />
+		</g>
+		<g filter="url(#filter_8)">
+			<ellipse id="Ellipse 1247" rx="67.340080" ry="19.350866" cx="67.3400803" cy="19.3508663" fill="rgb(97,73,255)" transform="matrix(0.420803,0.907152,-0.907152,0.420803,494.398,72.1758)" />
+		</g>
+	</g>
+</svg>

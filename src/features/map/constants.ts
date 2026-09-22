@@ -1,0 +1,2 @@
+export const PHARMACY_MAP_OVERVIEW_ZOOM = 12;
+export const PHARMACY_MAP_SELECT_ZOOM = 17;

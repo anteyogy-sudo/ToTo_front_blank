@@ -1,0 +1,17 @@
+###
+GET https://api.netvol.org/products/filters?city=34&group_id=2&category_id=49
+
+###
+GET https://api.netvol.org/products/filters?city=34&group_id=460&category_id=597
+
+###
+GET https://api.netvol.org/products/filters?city=34&query=Нурофен
+
+###
+GET https://api.netvol.org/products?query=Нурофен&city=34
+
+### Запрос на товар описание
+GET https://api.netvol.org/products/1439/description
+
+### Запрос на изоброжение
+GET https://api.netvol.org/catalogs
