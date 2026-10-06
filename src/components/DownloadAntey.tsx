@@ -8,12 +8,13 @@ import RuStoreIcon from "@/assets/icons/downloadSection/RuStoreIcon.svg"
 import AppGalleryIcon from "@/assets/icons/downloadSection/AppGalleryIcon.svg"
 import Image from "next/image";
 import Link from "next/link";
+import { BRAND_CONFIG } from "@/configs/brand";
 
 const DownloadAntey = () => {
-    const googlePlayLink = "https://play.google.com/store/apps/details?id=aptekaantey.ru.antey&hl=ru";
-    const ruStoreLink = "https://www.rustore.ru/catalog/app/aptekaantey.ru.antey";
-    const appGalleryLink = "https://appgallery.huawei.ru/app/C113974529";
-    const appStoreLink = "https://apps.apple.com/us/app/аптека-антей/id6760655657";
+    const googlePlayLink = BRAND_CONFIG.stores.googlePlay;
+    const ruStoreLink = BRAND_CONFIG.stores.ruStore;
+    const appGalleryLink = BRAND_CONFIG.stores.appGallery ?? BRAND_CONFIG.stores.googlePlay;
+    const appStoreLink = BRAND_CONFIG.stores.appStore;
 
     return (
        <div className='mt-6 max-w-base mx-auto bg-white-500 lg:pt-12 1144:pt-24 xl:pt-32 rounded-t-[16px] overflow-hidden'>
@@ -26,7 +27,7 @@ const DownloadAntey = () => {
                    />
 
                    <div className='flex flex-col w-full justify-center max-lg:items-center z-20'>
-                       <h4 className='w-full font-bold xl:text-[52px] leading-[105%] lg:text-[48px] lg:text-start text-center text-[20px] text-black-100'>Скачайте приложение Антей</h4>
+                       <h4 className='w-full font-bold xl:text-[52px] leading-[105%] lg:text-[48px] lg:text-start text-center text-[20px] text-black-100'>Скачайте приложение {BRAND_CONFIG.shortName}</h4>
                        <p className='w-full xs:p-0 px-10  lg:text-[16px] text-[14px] lg:text-start text-center leading-[120%] font-normal'>Чтобы всегда быть в курсе новинок и акций</p>
 
                        <div className=' w-fit lg:mt-8 mt-4 flex gap-5 lg:justify-start justify-center'>

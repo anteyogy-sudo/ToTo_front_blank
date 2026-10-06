@@ -97,7 +97,7 @@ const HowToOrderButton = () => {
                                 {/* Номер телефона */}
                                 <a
                                     href={"tel:" + PHONE_MAIN}
-                                    className="inline-block text-blue-600 font-bold text-[14px] sm:text-[16px] md:text-[20px] hover:text-blue-800 transition-colors py-2 sm:py-3 px-4 sm:px-6 bg-white rounded-lg border-2 border-blue-200 break-all"
+                                    className="inline-block text-primary-blue font-bold text-[14px] sm:text-[16px] md:text-[20px] hover:text-primary-dark transition-colors py-2 sm:py-3 px-4 sm:px-6 bg-white rounded-lg border-2 border-blue-lightGrayBlue break-all"
                                 >
                                     {PHONE_MAIN}
                                 </a>
@@ -105,7 +105,7 @@ const HowToOrderButton = () => {
 
                             {/* Кнопка закрытия с вашей иконкой */}
                             <button
-                                className="absolute top-2 right-2 sm:top-3 sm:right-3 text-gray-500 hover:text-red-500 transition-colors p-1 rounded-full hover:bg-gray-200"
+                                className="absolute top-2 right-2 sm:top-3 sm:right-3 text-gray-500 hover:text-destructive transition-colors p-1 rounded-full hover:bg-gray-200"
                                 onClick={handleCloseModal}
                             >
                                 <XIcon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />

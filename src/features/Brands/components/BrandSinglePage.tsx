@@ -68,7 +68,7 @@ const BrandSinglePage = ({ id }: { id: number }) => {
                         columns={countOfSlice}
                     />
                 ) : status === "error" ? (
-                    <p className="text-center text-red-500">Ошибка при загрузке товаров</p>
+                    <p className="text-center text-destructive">Ошибка при загрузке товаров</p>
                 ) : !brand?.products?.length ? (
                     <p className="text-center text-gray-500">Товары не найдены</p>
                 ) : (

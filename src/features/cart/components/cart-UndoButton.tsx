@@ -58,7 +58,7 @@
 //         if (!pending || progress >= 100) {
 //             return {};
 //         }
-//         const buttonColor = '#0081D3';
+//         const buttonColor = 'hsl(var(--brand-strong))';
 //         const progressColor = 'rgba(0,92,167)';
 //         // Серый rgb(247 247 247) --- rgba(220,220,220,0.78)
 //         // Синий #0074b4 --- #063c71

@@ -66,12 +66,12 @@ const PharmacyCardModeList = ({ pharmacies, onSelectPharmacy, bestPricePharmacyI
                 {selectedPharmacyStock ? (
                     <div className="w-full rounded-[16px] relative flex flex-col gap-3 p-6">
                         <button
-                            className="absolute right-[29px] top-[29px]"
+                            className="absolute right-[29px] top-[29px] text-gray-200"
                             onClick={() => {
                                 resetPharmacy()
                             }}
                         >
-                            <X color="#8E9AAB" />
+                            <X color="currentColor" />
                         </button>
 
                         <p className="font-bold max-w-[280px] w-full bg-white-500 flex flex-col text-[24px] leading-[100%] text-black-100 gap-1">

@@ -80,19 +80,19 @@ export const CatalogProductCard = ({ product, className }: Props) => {
             <Link href={productUrl} className="w-full h-fit flex flex-col md:gap-4 gap-1">
                 <div className="flex flex-col gap-1">
                     {showDiscountBadge && (
-                        <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-[#E53527] text-white-500 text-sm leading-[110%]">
+                        <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-primary-red text-white-500 text-sm leading-[110%]">
                             -{discountAmount} ₽
                         </div>
                     )}
 
                     {showRecipeBadge && (
-                        <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-[#CA2D74] text-white-500 text-sm leading-[110%]">
+                        <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-primary-pink text-white-500 text-sm leading-[110%]">
                             По рецепту
                         </div>
                     )}
 
                     {showBonusBadge && (
-                        <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-[#005CA7] text-white-500 text-sm leading-[110%]">
+                        <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-primary-blue text-white-500 text-sm leading-[110%]">
                             +{discountAmount}
                             <Image
                                 src={bonusIcon}
@@ -105,7 +105,7 @@ export const CatalogProductCard = ({ product, className }: Props) => {
                     )}
                 </div>
 
-                <p className="md:font-bold md:text-[24px] text-[14px] font-normal md:text-black-100 md:leading-[100%] text-[#8E9AAB] leading-[110%]">
+                <p className="md:font-bold md:text-[24px] text-[14px] font-normal md:text-black-100 md:leading-[100%] text-gray-200 leading-[110%]">
                     {product.name}
                 </p>
             </Link>

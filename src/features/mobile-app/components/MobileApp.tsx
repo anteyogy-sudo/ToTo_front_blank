@@ -20,12 +20,13 @@ import Speaker from "@/assets/icons/speaker.svg";
 import Basket from "@/assets/icons/Basket.svg";
 import Percent from "@/assets/icons/Percent.svg";
 import QrCode from "@/assets/icons/qr.svg";
+import { BRAND_CONFIG } from "@/configs/brand";
 
 const MobileApp = () => {
-    const googlePlayLink = "https://play.google.com/store/apps/details?id=aptekaantey.ru.antey&hl=ru";
-    const ruStoreLink = "https://www.rustore.ru/catalog/app/aptekaantey.ru.antey";
-    const appGalleryLink = "https://appgallery.huawei.ru/app/C113974529";
-    const appStoreLink = "https://apps.apple.com/us/app/аптека-антей/id6760655657";
+    const googlePlayLink = BRAND_CONFIG.stores.googlePlay;
+    const ruStoreLink = BRAND_CONFIG.stores.ruStore;
+    const appGalleryLink = BRAND_CONFIG.stores.appGallery ?? BRAND_CONFIG.stores.googlePlay;
+    const appStoreLink = BRAND_CONFIG.stores.appStore;
 
     return (
         <div className='w-full overflow-hidden'>
@@ -78,7 +79,7 @@ const MobileApp = () => {
                         </div>
                         {/* Текст под стрелочкой для мобильных экранов */}
                         <div className="px-1">
-                            <h1 className="text-[32px] font-bold leading-[100%] bg-gradient-to-r from-[#12379C] to-[#04087C] bg-clip-text text-transparent
+                            <h1 className="text-[32px] font-bold leading-[100%] bg-gradient-to-r from-[hsl(var(--brand-night))] to-[hsl(var(--brand-ink))] bg-clip-text text-transparent
                             max-md:text-[28px] max-md:font-bold max-md:leading-[100%] max-md:bg-gradient-to-r max-md:bg-clip-text max-md:text-transparent
                             max-xs:text-[22px]
                             max-none:text-[20px]">
@@ -189,7 +190,7 @@ const MobileApp = () => {
                                             lg:mr-1
                                             md:mr-0.5">
                                 <div className="bg-white inline-block px-6 py-3 rounded-lg shadow-sm">
-                                    <h1 className="text-[47px] font-bold leading-[100%] text-[#005CA7] mb-6">
+                                    <h1 className="text-[47px] font-bold leading-[100%] text-primary-blue mb-6">
                                         Установи приложение
                                     </h1>
                                 </div>
@@ -298,7 +299,7 @@ const MobileApp = () => {
                                             />
                                         </div>
                                         {/* Текст справа */}
-                                        <p className="text-[18px] font-bold text-[#12379C] leading-[1.2]
+                                        <p className="text-[18px] font-bold text-[hsl(var(--brand-night))] leading-[1.2]
                                                     xl:text-[18px]
                                                     lg:text-[16px]
                                                     md:text-[14px]">
@@ -350,7 +351,7 @@ const MobileApp = () => {
                         md:max-w-md md:ml-6
                         sm:max-w-full sm:ml-0">
                         {/* Заголовок */}
-                        <h2 className="text-[46px] font-bold leading-[120%] text-[#2255B6] mb-8 max-md:text-[28px] max-md:ml-5 max-md:mb-6
+                        <h2 className="text-[46px] font-bold leading-[120%] text-[hsl(var(--brand-royal))] mb-8 max-md:text-[28px] max-md:ml-5 max-md:mb-6
                             2xl:text-[46px] 2xl:mb-8
                             xl:text-[40px] xl:mb-7
                             lg:text-[38px] lg:mb-6
@@ -361,7 +362,7 @@ const MobileApp = () => {
                         </h2>
 
                         {/* Текст с описанием */}
-                        <div className="text-[#2255B6] text-[26px] font-medium font-inter leading-relaxed space-y-2 max-md:text-[22px] max-md:ml-5 max-md:space-y-3
+                        <div className="text-[hsl(var(--brand-royal))] text-[26px] font-medium font-inter leading-relaxed space-y-2 max-md:text-[22px] max-md:ml-5 max-md:space-y-3
                             2xl:text-[26px] 2xl:space-y-2
                             xl:text-[24px] xl:space-y-2
                             lg:text-[22px] lg:space-y-2
@@ -471,7 +472,7 @@ const MobileApp = () => {
                             <div className="text-left md:w-full md:max-w-[350px] md:text-left md:flex md:flex-col md:items-start
                                 max-md:w-full max-md:max-w-[280px] max-md:text-left max-md:flex max-md:flex-col max-md:items-center max-md:mt-[-90px]">
                                 {/* Заголовок */}
-                                <h2 className="text-[46px] font-bold leading-[120%] text-[#F7F7F7] mb-8 whitespace-nowrap
+                                <h2 className="text-[46px] font-bold leading-[120%] text-surface mb-8 whitespace-nowrap
                                     md:text-[34px] md:mb-6 md:whitespace-normal
                                     lg:text-[40px] lg:mb-7
                                     max-md:text-[28px] max-md:whitespace-normal max-md:mb-6 max-md:w-full">
@@ -479,7 +480,7 @@ const MobileApp = () => {
                                 </h2>
 
                                 {/* Текст с описанием */}
-                                <div className="text-[#F7F7F7] text-[26px] font-medium leading-relaxed space-y-3
+                                <div className="text-surface text-[26px] font-medium leading-relaxed space-y-3
                                     md:text-[20px] md:leading-tight md:space-y-4
                                     lg:text-[22px] lg:space-y-4
                                     max-md:text-[22px] max-md:leading-tight max-md:space-y-6 max-md:w-full">
@@ -544,9 +545,9 @@ const MobileApp = () => {
                             href="https://play.google.com/store/apps/details?id=aptekaantey.ru.antey&hl=ru"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block bg-[#005CA7] hover:bg-[#004A8A] w-full py-1.5 md:py-2 lg:py-3 rounded-lg text-center transition-colors duration-200"
+                            className="block bg-primary-blue hover:bg-primary-dark w-full py-1.5 md:py-2 lg:py-3 rounded-lg text-center transition-colors duration-200"
                         >
-                            <span className="text-[#F7F7F7] text-[26px] font-medium
+                            <span className="text-surface text-[26px] font-medium
                                 md:text-[22px] md:font-semibold
                                 lg:text-[24px]
                                 max-md:text-[20px]">Установить</span>

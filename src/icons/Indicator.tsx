@@ -8,10 +8,10 @@ interface IndicatorProps {
 const Indicator: React.FC<IndicatorProps> = ({ available, variant = "default" }) => {
     const fill =
         variant === "bestPrice"
-            ? "#0DB85C"
+            ? "hsl(var(--brand-success))"
             : available
-              ? "#005CA7"
-              : "#FAB600";
+              ? "hsl(var(--brand))"
+              : "hsl(var(--brand-warning))";
 
     return (
         <svg

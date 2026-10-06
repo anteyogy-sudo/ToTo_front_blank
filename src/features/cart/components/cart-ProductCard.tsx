@@ -108,10 +108,10 @@ export const CartProductCard = ({ product, setId, productIndex }: Props) => {
                             <div className="w-fit flex flex-row gap-[10px] items-center justify-between flex-wrap">
                                 {!!product.discount && (
                                     <div className="flex flex-row gap-[7px]">
-                                        <span className="text-[18px] leading-[120%] line-through text-[#64676A] text-nowrap">
+                                        <span className="text-[18px] leading-[120%] line-through text-primary-black-gray text-nowrap">
                                             {currentFullPrice}
                                         </span>
-                                        <div className="flex rounded-[99px] text-[14px] leading-[120%] bg-[#077AE4] text-white-100 px-[12px] py-[4px] text-nowrap">
+                                        <div className="flex rounded-[99px] text-[14px] leading-[120%] bg-blue-strong text-white-100 px-[12px] py-[4px] text-nowrap">
                                             {discountString}
                                         </div>
                                     </div>
@@ -195,10 +195,10 @@ export const CartProductCard = ({ product, setId, productIndex }: Props) => {
                             <div className="flex flex-col items-center justify-center whitespace-nowrap">
                                 {product.discount && (
                                     <div className="flex flex-row gap-[7px]">
-                                        <span className="text-[20px] leading-[120%] line-through text-[#64676A] text-nowrap">
+                                        <span className="text-[20px] leading-[120%] line-through text-primary-black-gray text-nowrap">
                                             {currentFullPrice}
                                         </span>
-                                        <div className="flex rounded-[99px] text-[14px] leading-[120%] bg-[#077AE4] text-white-100 px-[12px] py-[4px] text-nowrap">
+                                        <div className="flex rounded-[99px] text-[14px] leading-[120%] bg-blue-strong text-white-100 px-[12px] py-[4px] text-nowrap">
                                             {discountString}
                                         </div>
                                     </div>

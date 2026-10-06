@@ -1,0 +1,38 @@
+﻿src/components/ui/calendar.tsx(25,9): error TS2353: Object literal may only specify known properties, and 'caption' does not exist in type 'Partial<ClassNames>'.
+src/components/ui/calendar.tsx(63,9): error TS2353: Object literal may only specify known properties, and 'IconLeft' does not exist in type 'Partial<CustomComponents>'.
+src/components/ui/calendar.tsx(63,22): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/components/ui/calendar.tsx(66,23): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/components/ui/date-picker.tsx(38,11): error TS2322: Type '{ mode: "single"; selected: Date | undefined; onSelect: Dispatch<SetStateAction<Date | undefined>>; initialFocus: true; }' is not assignable to type 'IntrinsicAttributes & DayPickerProps'.
+  Property 'initialFocus' does not exist on type '(IntrinsicAttributes & PropsBase & PropsSingle) | (IntrinsicAttributes & PropsBase & PropsSingleRequired)'.
+src/features/account/my-bonuses/components/BonusesDatePicker.tsx(49,11): error TS2322: Type '{ mode: "single"; selected: Date | undefined; onSelect: (newDate?: Date | undefined) => void; initialFocus: true; disabled: (day: Date) => boolean; }' is not assignable to type 'IntrinsicAttributes & DayPickerProps'.
+  Property 'initialFocus' does not exist on type '(IntrinsicAttributes & PropsBase & PropsSingle) | (IntrinsicAttributes & PropsBase & PropsSingleRequired)'.
+src/features/banner/components/BannerCarousel.tsx(77,27): error TS2339: Property 'goodId' does not exist on type 'BannerProps'.
+src/features/banner/components/BannerCarousel.tsx(78,53): error TS2339: Property 'goodId' does not exist on type 'BannerProps'.
+src/features/banner/components/renderBannerErrorFallbackComponent.tsx(6,51): error TS2339: Property 'name' does not exist on type '{}'.
+src/features/banner/components/renderBannerErrorFallbackComponent.tsx(11,25): error TS2339: Property 'title' does not exist on type '{}'.
+src/features/banner/components/renderBannerErrorFallbackComponent.tsx(14,25): error TS2339: Property 'message' does not exist on type '{}'.
+src/features/banner/components/renderBannerProductCardErrorFallback.tsx(6,62): error TS2339: Property 'name' does not exist on type '{}'.
+src/features/banner/components/renderBannerProductCardErrorFallback.tsx(11,25): error TS2339: Property 'title' does not exist on type '{}'.
+src/features/banner/components/renderBannerProductCardErrorFallback.tsx(14,25): error TS2339: Property 'description' does not exist on type '{}'.
+src/features/cart/components/PlaceAnOrderButton.tsx(20,52): error TS2339: Property 'selectedCart' does not exist on type 'CartStore'.
+src/features/cart/components/PlaceAnOrderButton.tsx(22,25): error TS2349: This expression is not callable.
+  Type 'Record<string, boolean>' has no call signatures.
+src/features/navbar/components/CompletedOrderButton.tsx(137,69): error TS2339: Property 'url' does not exist on type 'string'.
+src/features/navbar/components/LoginFirstNameLastName.tsx(4,10): error TS2305: Module '"../schemas/login.schema"' has no exported member 'LoginSchema'.
+src/features/navbar/components/LoginPhoneNumber.tsx(4,10): error TS2305: Module '"../schemas/login.schema"' has no exported member 'LoginSchema'.
+src/features/pharmacy/choose/components/choose-pharmacy-map-layout.tsx(27,13): error TS2339: Property 'selectedCartCount' does not exist on type 'CartStore'.
+src/features/pharmacy/choose/components/ChooseOnePharmacyDialog.tsx(32,13): error TS2339: Property 'selectedCartCount' does not exist on type 'CartStore'.
+src/features/pharmacy/choose/components/pharmacies-map.tsx(18,13): error TS2339: Property 'selectedCartCount' does not exist on type 'CartStore'.
+src/features/pharmacy/choose/components/pharmacy-card.tsx(33,12): error TS2339: Property 'selectedCartCount' does not exist on type 'CartStore'.
+src/features/pharmacy/choose/components/PharmacyCardModeList.tsx(31,13): error TS2339: Property 'selectedCartCount' does not exist on type 'CartStore'.
+src/features/pharmacy/choose/components/PharmacyCardModeListItem.tsx(26,13): error TS2339: Property 'selectedCartCount' does not exist on type 'CartStore'.
+src/features/pharmacy/choose/hooks/useSelectedGoodsForStocks.ts(5,53): error TS2551: Property 'selectedIds' does not exist on type 'CartStore'. Did you mean 'selectedItems'?
+src/features/pharmacy/choose/hooks/useSelectedGoodsForStocks.ts(11,30): error TS7006: Parameter 'id' implicitly has an 'any' type.
+src/features/pharmacy/choose/utils/pharmacy-stock.utils.ts(10,44): error TS2339: Property 'outOfStocks' does not exist on type 'PharmacyStockProps'.
+src/features/pharmacy/choose/utils/pharmacy-stock.utils.ts(10,61): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/features/pharmacy/choose/utils/pharmacy-stock.utils.ts(15,21): error TS2339: Property 'outOfStocks' does not exist on type 'PharmacyStockProps'.
+src/features/pharmacy/choose/utils/pharmacy-stock.utils.ts(32,44): error TS2339: Property 'outOfStocks' does not exist on type 'PharmacyStockProps'.
+src/features/pharmacy/choose/utils/pharmacy-stock.utils.ts(32,61): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/features/pharmacy/choose/utils/pharmacy-stock.utils.ts(36,37): error TS2339: Property 'outOfStocks' does not exist on type 'PharmacyStockProps'.
+src/features/pharmacy/choose/utils/pharmacy-stock.utils.ts(36,55): error TS7006: Parameter 'o' implicitly has an 'any' type.
+src/features/products/components/DiscountedPage.tsx(78,23): error TS2739: Type '{ lastPage: number; }' is missing the following properties from type 'Props': activePage, onPageChange

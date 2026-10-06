@@ -392,7 +392,7 @@ export const Catalogs = ({ catalog_id }: Props) => {
                 ) : error ? (
                     // Сообщение об ошибке
                     <div className="w-full text-center py-10">
-                        <h3 className="text-xl font-semibold text-red-500">Ошибка при загрузке товаров</h3>
+                        <h3 className="text-xl font-semibold text-destructive">Ошибка при загрузке товаров</h3>
                         <p className="text-gray-600 mt-2">Попробуйте обновить страницу</p>
                     </div>
                 ) : !products?.data || !products.data.length ? (

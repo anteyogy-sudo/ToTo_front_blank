@@ -20,7 +20,7 @@ const MaintenancePage = ({redirect_mobile}: Props) => {
                 <Image src={Ribbons} className="absolute object-cover select-none w-full" draggable="false" alt=''/>
                 <Image src={CatBottom} className="absolute bottom-0 object-cover select-none w-[90%]" draggable="false" alt=''/>
                 <div className="flex flex-col h-screen gap-3 py-24 px-8 w-full justify-center
-                                bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#0094C4] via-[#005EA8] to-[#005CA7] select-none">
+                                bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[hsl(var(--brand-sky))] via-[hsl(var(--brand-mid))] to-primary-blue select-none">
                     <div className="flex flex-col mx-auto justify-center items-center gap-5 z-20">
                         <div className="flex flex-col md:flex-row justify-center gap-3 1144:gap-12 items-center">
                             <div className="flex md:max-w-[70%] 1144:max-w-full font-bold flex-col items-center justify-center text-white-500
@@ -47,7 +47,7 @@ const MaintenancePage = ({redirect_mobile}: Props) => {
         <>
             <Image src={Ribbons} className="absolute object-cover select-none w-full" draggable="false" alt=''/>
             <div className="flex flex-col h-screen gap-3 py-24 px-8 z-20
-                                bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#0094C4] via-[#005EA8] to-[#005CA7]">
+                                bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[hsl(var(--brand-sky))] via-[hsl(var(--brand-mid))] to-primary-blue">
                 <div className={"relative flex-[1_1_0] min-h-0"}>
                     <Image src={Cat} fill priority className={"object-contain select-none"} draggable="false"
                            alt=''/>

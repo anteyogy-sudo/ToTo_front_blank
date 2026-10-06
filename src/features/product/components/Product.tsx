@@ -192,19 +192,19 @@ const Product = ({ id }: { id: string }) => {
         return (
             <div className="absolute left-2 top-2 z-20 flex flex-col gap-2 select-none pointer-events-none">
                 {showDiscountBadge && (
-                    <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-[#E53527] text-white-500 text-sm leading-[110%]">
+                    <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-primary-red text-white-500 text-sm leading-[110%]">
                         -{discountAmount} ₽
                     </div>
                 )}
 
                 {showRecipeBadge && (
-                    <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-[#CA2D74] text-white-500 text-sm leading-[110%]">
+                    <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-primary-pink text-white-500 text-sm leading-[110%]">
                         По рецепту
                     </div>
                 )}
 
                 {showBonusBadge && (
-                    <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-[#005CA7] text-white-500 text-sm leading-[110%]">
+                    <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-primary-blue text-white-500 text-sm leading-[110%]">
                         +{discountAmount}{" "}
                         <Image
                             src={bonusIcon}
@@ -306,7 +306,7 @@ const Product = ({ id }: { id: string }) => {
                         1144:shadow-[10px_10px_20px_0px_rgba(98,97,110,0.1),10px_-10px_8px_0px_rgba(146,146,146,0.1)]">
                             { (product?.data?.availableAt || product?.data?.availableAt !== 0) && (
                                 <div className='flex gap-2'>
-                                    <Image src={IconGeo} alt='geo' className="text-[#00945E]" />
+                                    <Image src={IconGeo} alt='geo' className="text-green-leaf" />
                                     <p className="font-bold text-[18px]">
                                         Есть в {product?.data?.availableAt} аптеках
                                     </p>

@@ -78,7 +78,7 @@ export const Bonuses = () => {
               <p className='lg:text-[24px] text-[18px] leading-[120%] '>Номер карты: <span className='font-medium'>{user?.loyalty_code}</span></p>
           </article>
 
-          <button onClick={openExpand} className='flex w-fit justify-center items-center p-[16px] font-medium lg:text-[24px] text-[16px] leading-[120%] text-primary-blue bg-[#F3FAFF] border border-primary-blue rounded-[16px]'>
+          <button onClick={openExpand} className='flex w-fit justify-center items-center p-[16px] font-medium lg:text-[24px] text-[16px] leading-[120%] text-primary-blue bg-blue-light border border-primary-blue rounded-[16px]'>
               Развернуть для сканирования
           </button>
 

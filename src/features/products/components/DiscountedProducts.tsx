@@ -104,7 +104,7 @@ export const DiscountedProducts = () => {
               )}
             />
           ) : status === "error" ? (
-            <p className="text-red-500">
+            <p className="text-destructive">
               Произошла ошибка при загрузке товаров.
             </p>
           ) : (

@@ -48,7 +48,7 @@ export const CancelOrderButton = ({id, statusCode}: Props) => {
             onClick={handlePlaceAnOrder}
             disabled={loading || disabled}
             className="h-full disabled:bg-gray-700 disabled:text-blue-light-grayfont-bold
-            font-bold lg:text-[18px] text-[16px] px-1 flex justify-center items-center text-white-500 w-full min-w-[180px] rounded-[16px] bg-red-500"
+            font-bold lg:text-[18px] text-[16px] px-1 flex justify-center items-center text-white-500 w-full min-w-[180px] rounded-[16px] bg-destructive"
         >
             {loading && <LoadingSpinner className={"text-blue-light-grayfont-bold"}/>}
             Отменить заказ

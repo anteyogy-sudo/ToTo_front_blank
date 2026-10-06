@@ -1,5 +1,7 @@
 FROM node:lts-alpine AS build
 
+ARG NEXT_PUBLIC_BRAND=antey
+
 WORKDIR /app
 
 COPY package*.json ./
@@ -8,7 +10,7 @@ RUN npm ci
 
 COPY . .
 
-RUN npm run build
+RUN NEXT_PUBLIC_BRAND=$NEXT_PUBLIC_BRAND npm run build
 
 FROM node:lts-alpine AS runner
 

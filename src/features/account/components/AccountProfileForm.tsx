@@ -100,7 +100,7 @@ export const AccountProfileForm = ({ user }: Props) => {
   const inputClass = (error?: boolean) =>
       `h-[62px] rounded-2xl text-[18px] border focus:outline-none focus:outline-[5px] focus:ring-2 focus-visible:ring-2 ${
           error
-              ? "border-red-500 focus:border-red-500 focus:ring-red-500 focus-visible:ring-red-500"
+              ? "border-destructive focus:border-destructive focus:ring-destructive focus-visible:ring-destructive"
               : "border-gray-200 focus:border-primary-blue focus:ring-primary-blue focus-visible:ring-primary-blue "
       }`;
 
@@ -130,7 +130,7 @@ export const AccountProfileForm = ({ user }: Props) => {
                     {...field}
                   />
                   {fieldState.error && (
-                      <p className="text-sm text-red-500">
+                      <p className="text-sm text-destructive">
                         {fieldState.error.message}
                       </p>
                   )}
@@ -158,7 +158,7 @@ export const AccountProfileForm = ({ user }: Props) => {
                     {...field}
                   />
                   {fieldState.error && (
-                      <p className="text-sm text-red-500">
+                      <p className="text-sm text-destructive">
                         {fieldState.error.message}
                       </p>
                   )}
@@ -190,7 +190,7 @@ export const AccountProfileForm = ({ user }: Props) => {
                       />
 
                       {fieldState.error && (
-                          <p className="text-sm text-red-500">
+                          <p className="text-sm text-destructive">
                             {fieldState.error.message}
                           </p>
                       )}
@@ -235,7 +235,7 @@ export const AccountProfileForm = ({ user }: Props) => {
                     {...field}
                   />
                   {fieldState.error && (
-                      <p className="text-sm text-red-500">
+                      <p className="text-sm text-destructive">
                         {fieldState.error.message}
                       </p>
                   )}

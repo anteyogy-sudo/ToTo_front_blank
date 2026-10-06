@@ -16,7 +16,7 @@ export const BannerProductCard = ({ product }: Props) => {
     return (
         <div className="1144:flex hidden h-[442px] rounded-2xl flex-col items-center p-[3px] shadow-[0px_0px_20px_0px_rgba(0,0,0,0.08)]
                     max-w-[293px] w-full
-                    [bg-linear-gradient(to_right,_#008CFF,_#B9FFCA,_#BCE1FF])] hover:scale-[102%] transition-transform duration-500">
+                    bg-promo hover:scale-[102%] transition-transform duration-500">
             <div className="bg-white-500 w-full h-full py-[20px] px-4 rounded-2xl flex justify-between flex-col">
                 <p className='text-[27px] text-black-100 font-bold leading-[100%] text-center px-[25px]'>Рекомендация месяца</p>
                 <div className='flex rounded-2xl bg-white-500 flex-col items-center'>

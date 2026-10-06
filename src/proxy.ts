@@ -3,7 +3,9 @@ import { NextRequest, NextResponse } from "next/server";
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const token = request.cookies.get("access_token")?.value;
-  if (pathname === "/catalog" || pathname === "/product") {
+  // `/catalog` больше не редиректится: страница реализована (клиентская
+  // фильтрация). На неё ведут хлебные крошки из `Product.tsx`.
+  if (pathname === "/product") {
     return NextResponse.redirect(new URL("/", request.url));
   }
 

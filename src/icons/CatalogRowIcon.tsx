@@ -6,8 +6,8 @@ type CatalogListIconProps = {
 
 const CatalogRowIcon: React.FC<CatalogListIconProps> = ({ selected = false }) => {
 
-    const primaryColor = selected ? '#005CA7' : 'white'
-    const secondaryColor = !selected ? '#005CA7' : 'white'
+    const primaryColor = selected ? 'hsl(var(--brand))' : 'white'
+    const secondaryColor = !selected ? 'hsl(var(--brand))' : 'white'
 
     return (
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">

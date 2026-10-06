@@ -44,7 +44,7 @@ export const BlockMobileApp = ({ isVisible, setIsVisible, isCatalogOpen }: Block
             <div
                 className="hidden lg:block w-full"
                 style={{
-                    background: "linear-gradient(90deg, #17386E 0%, #005CA7 48%, #056FC4 64%, #005CA7 78%, #0043A7 93%, #024E8B 100%)",
+                    background: "linear-gradient(90deg, hsl(var(--brand-navy)) 0%, hsl(var(--brand)) 48%, hsl(var(--brand-deep)) 64%, hsl(var(--brand)) 78%, hsl(var(--brand-stop-a)) 93%, hsl(var(--brand-stop-b)) 100%)",
                 }}
             >
                 <div className="relative mx-auto w-full max-w-[1440px] overflow-hidden px-4 py-5 md:px-6 md:py-6">
@@ -100,7 +100,7 @@ export const BlockMobileApp = ({ isVisible, setIsVisible, isCatalogOpen }: Block
                     <div className="pointer-events-none absolute hidden z-20
                     xl:left-[250px] xl:top-[65px] xl:block
                     lg:left-[150px] lg:top-[60px] lg:block">
-                        <p className="xl:text-[13px] lg:text-[11px] font-semibold leading-[1.2] text-[#F7F7F7]">
+                        <p className="xl:text-[13px] lg:text-[11px] font-semibold leading-[1.2] text-surface">
                             низкие цены
                         </p>
                     </div>
@@ -120,7 +120,7 @@ export const BlockMobileApp = ({ isVisible, setIsVisible, isCatalogOpen }: Block
                     <div className="pointer-events-none absolute hidden z-20
                     xl:left-[450px] xl:top-[10px] xl:block
                     lg:left-[310px] lg:top-[10px] lg:block">
-                        <p className="xl:text-[13px] lg:text-[11px] font-semibold leading-[1.2] text-[#F7F7F7]">
+                        <p className="xl:text-[13px] lg:text-[11px] font-semibold leading-[1.2] text-surface">
                             скидки<br />
                             и акции
                         </p>
@@ -141,7 +141,7 @@ export const BlockMobileApp = ({ isVisible, setIsVisible, isCatalogOpen }: Block
                     <div className="pointer-events-none absolute hidden z-20
                     xl:left-[580px] xl:top-[55px] xl:block
                     lg:left-[400px] lg:top-[45px] lg:block">
-                        <p className="xl:text-[13px] lg:text-[11px] font-semibold leading-[1.2] text-[#F7F7F7] text-center">
+                        <p className="xl:text-[13px] lg:text-[11px] font-semibold leading-[1.2] text-surface text-center">
                             более 20<br />
                             тысяч товаров
                         </p>
@@ -151,7 +151,7 @@ export const BlockMobileApp = ({ isVisible, setIsVisible, isCatalogOpen }: Block
                     xl:right-[360px] xl:top-[10px] xl:block
                     lg:right-[280px] lg:top-[13px] lg:block">
                         <p
-                            className="font-semibold leading-[1.05] text-[#F7F7F7] xl:text-[34px] lg:text-[26px]"
+                            className="font-semibold leading-[1.05] text-surface xl:text-[34px] lg:text-[26px]"
                             style={{ letterSpacing: "0.7px" }}
                         >
                             Установи приложение
@@ -164,7 +164,7 @@ export const BlockMobileApp = ({ isVisible, setIsVisible, isCatalogOpen }: Block
                     min-[1280px]:max-[1360px]:top-[50px] min-[1280px]:max-[1360px]:max-w-[360px]
                     min-[1023px]:max-[1136px]:top-[45px] min-[1023px]:max-[1136px]:max-w-[300px]">
                         <p
-                            className="font-normal leading-[1.05] text-[#F7F7F7] xl:text-[18px] lg:text-[16px]"
+                            className="font-normal leading-[1.05] text-surface xl:text-[18px] lg:text-[16px]"
                             style={{ letterSpacing: "0.7px" }}
                         >
                             И пусть нужные лекарства будут с Вами повсюду
@@ -192,16 +192,16 @@ export const BlockMobileApp = ({ isVisible, setIsVisible, isCatalogOpen }: Block
                                 className="inline-flex items-center justify-center rounded-[16px] px-5 py-2.5
                                 transition-transform duration-200 hover:scale-[1.02] xl:px-7 xl:py-3 lg:px-4 lg:py-2.5"
                                 style={{
-                                    background: "linear-gradient(90deg, #CEF0FF 0%, #F9EAFF 50%, #FFFFFF 100%)",
-                                    border: "1px solid rgba(244, 209, 255, 0.9)",
-                                    boxShadow: "0 0 0 1px rgba(244, 209, 255, 0.35), 0 0 22px rgba(244, 209, 255, 0.55)",
+                                    background: "linear-gradient(90deg, hsl(var(--brand-mist)) 0%, hsl(var(--brand-orchid)) 50%, #FFFFFF 100%)",
+                                    border: "1px solid hsl(var(--brand-glow-soft) / 0.9)",
+                                    boxShadow: "0 0 0 1px hsl(var(--brand-glow-soft) / 0.35), 0 0 22px hsl(var(--brand-glow-soft) / 0.55)",
                                     fontFamily: '"PT Root UI", sans-serif',
                                 }}
                             >
                                 <span className="text-[20px] font-semibold leading-none xl:text-[20px] lg:text-[16px]"
                                       style={{
                                           fontFamily: '"PT Root UI", sans-serif',
-                                          backgroundImage: "linear-gradient(90deg, #0533A6 0%, #391A94 100%)",
+                                          backgroundImage: "linear-gradient(90deg, hsl(var(--brand-stop-d)) 0%, hsl(var(--brand-violet)) 100%)",
                                           WebkitBackgroundClip: "text",
                                           backgroundClip: "text",
                                           color: "transparent",
@@ -239,7 +239,7 @@ export const BlockMobileApp = ({ isVisible, setIsVisible, isCatalogOpen }: Block
                                     <div className="pointer-events-auto relative flex h-[480px] w-[400px] flex-col items-center rounded-[30px] px-4 py-4"
                                          onClick={(e) => e.stopPropagation()}
                                          style={{
-                                             background: "linear-gradient(180deg, #FFFFFF 36%, #E6F0FF 52%, #BCD8FF 95%)",
+                                             background: "linear-gradient(180deg, #FFFFFF 36%, hsl(var(--brand-haze)) 52%, hsl(var(--brand-haze-2)) 95%)",
                                              fontFamily: '"PT Root UI", sans-serif',
                                          }}
                                     >
@@ -264,7 +264,7 @@ export const BlockMobileApp = ({ isVisible, setIsVisible, isCatalogOpen }: Block
 
                                         <p
                                             className="mt-4 max-w-[560px] text-center text-[20px] font-semibold leading-[1.25] bg-clip-text text-transparent"
-                                            style={{backgroundImage: "linear-gradient(90deg, #005CA7 0%, #024EAB 100%)",}}
+                                            style={{backgroundImage: "linear-gradient(90deg, hsl(var(--brand)) 0%, hsl(var(--brand-stop-c)) 100%)",}}
                                         >
                                             Для установки приложения отсканируйте QR-код с помощью<br /> мобильного телефона
                                         </p>
@@ -300,7 +300,7 @@ export const BlockMobileApp = ({ isVisible, setIsVisible, isCatalogOpen }: Block
                                         </div>
 
                                         <p className="mt-3 max-w-[320px] text-center text-[18px] font-semibold leading-[1.25] bg-clip-text text-transparent"
-                                           style={{backgroundImage: "linear-gradient(90deg, #094E85 0%, #9B4BDB 100%)",}}
+                                           style={{backgroundImage: "linear-gradient(90deg, hsl(var(--brand-stop-e)) 0%, hsl(var(--brand-plum)) 100%)",}}
                                         >
                                             Будь в курсе наших акций в<br /> любой момент!
                                         </p>
@@ -316,7 +316,7 @@ export const BlockMobileApp = ({ isVisible, setIsVisible, isCatalogOpen }: Block
             <div className="lg:hidden -mx-4 md:-mx-6">
                 <div className="relative w-full max-w-[1360px] overflow-hidden px-4 py-4 md:px-4 md:py-4"
                      style={{
-                         background: "linear-gradient(90deg, #095492 100%)", fontFamily: '"PT Root UI", sans-serif',
+                         background: "linear-gradient(90deg, hsl(var(--brand-stop-b)) 100%)", fontFamily: '"PT Root UI", sans-serif',
                      }}
                 >
                     <div className="absolute top-0 left-[-20px] w-[820px] h-[115px]
@@ -341,7 +341,7 @@ export const BlockMobileApp = ({ isVisible, setIsVisible, isCatalogOpen }: Block
                         className="absolute right-[25px] top-3 z-30 flex h-10 w-10 items-center justify-center rounded-full
                         min-[120px]:max-[355px]:translate-x-0.1
                         min-[120px]:max-[355px]:top-6
-                        text-[rgb(210,218,255)] hover:text-white-500 transition-colors duration-500"
+                         text-[hsl(var(--brand-haze-3))] hover:text-white-500 transition-colors duration-500"
                         aria-label="Закрыть"
                     >
                         <X className="w-8 h-8 z-10 stroke-2"/>
@@ -349,7 +349,7 @@ export const BlockMobileApp = ({ isVisible, setIsVisible, isCatalogOpen }: Block
 
                     <div className="relative z-20 flex w-full flex-col items-center justify-center text-center">
                         <p
-                            className="w-full leading-[1.3] text-[#F7F7F7] text-[16px] min-[120px]:max-[461px]:text-[12px]"
+                            className="w-full leading-[1.3] text-surface text-[16px] min-[120px]:max-[461px]:text-[12px]"
                             style={{
                                 fontFamily: '"PT Root UI", sans-serif',
                                 fontWeight: 500,
@@ -369,13 +369,13 @@ export const BlockMobileApp = ({ isVisible, setIsVisible, isCatalogOpen }: Block
                             px-6 transition-transform duration-200 hover:scale-[1.02]
                             min-[120px]:max-[461px]:h-[30px] min-[120px]:max-[461px]:w-[240px]"
                             style={{
-                                background: "linear-gradient(90deg, #4C86F2 0%, #A6D7EC 100%)",
-                                boxShadow: "0 6px 8px rgba(9, 91, 155, 0.9), 0 10px 24px rgba(76, 134, 242, 0.22)",
+                                background: "linear-gradient(90deg, hsl(var(--brand-azure)) 0%, hsl(var(--brand-glow)) 100%)",
+                                boxShadow: "0 6px 8px hsl(var(--brand-shadow-a) / 0.9), 0 10px 24px hsl(var(--brand-azure) / 0.22)",
                                 fontFamily: '"PT Root UI", sans-serif',
                             }}
                         >
                             <span
-                                className="w-full leading-[1.3] text-[#F7F7F7] text-[16px] min-[120px]:max-[461px]:text-[12px]"
+                                className="w-full leading-[1.3] text-surface text-[16px] min-[120px]:max-[461px]:text-[12px]"
                                 style={{
                                     fontFamily: '"PT Root UI", sans-serif',
                                     fontWeight: 600,

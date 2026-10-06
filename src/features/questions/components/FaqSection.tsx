@@ -81,7 +81,7 @@ const FaqSection = () => {
 
         if (error) {
             return (
-                <div className="text-center py-8 text-red-500">
+                <div className="text-center py-8 text-destructive">
                     <p>{error}</p>
                     <Button
                         onClick={loadFaq}

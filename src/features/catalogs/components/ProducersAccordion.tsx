@@ -43,7 +43,7 @@ export const ProducersAccordion = ({
                     {isLoading ? (
                         <LoadingSpinner size={24} />
                     ) : error ? (
-                        <p className="text-red-500">Ошибка загрузки</p>
+                        <p className="text-destructive">Ошибка загрузки</p>
                     ) : producers.length === 0 ? (
                         <p className="text-gray-500">Нет производителей</p>
                     ) : (

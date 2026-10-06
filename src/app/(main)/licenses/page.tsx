@@ -33,7 +33,7 @@ const Page = () => {
                             href="https://cdn.aptekaantey.ru/antey-license.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-4 py-2 border-2 border-[#005CA7] bg-white text-[#005CA7] font-medium rounded-2xl hover:bg-blue-50 transition-colors duration-200"
+                            className="px-4 py-2 border-2 border-primary-blue bg-white text-primary-blue font-medium rounded-2xl hover:bg-blue-lightBlue transition-colors duration-200"
                         >
                             Загрузить
                         </a>

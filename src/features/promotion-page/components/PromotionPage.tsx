@@ -58,7 +58,7 @@ const PromotionPage = ({ id }: { id: string }) => {
         }
 
         if (status === "error") {
-            return <p className="text-center text-red-500">Не удалось загрузить акцию</p>;
+            return <p className="text-center text-destructive">Не удалось загрузить акцию</p>;
         }
 
         if (isMobile) {
@@ -128,7 +128,7 @@ const PromotionPage = ({ id }: { id: string }) => {
                         columns={3}
                     />
                 ) : status === "error" ? (
-                    <p className="text-center text-red-500">Не удалось загрузить товары акции</p>
+                    <p className="text-center text-destructive">Не удалось загрузить товары акции</p>
                 ) : (
                     <div className="w-full h-fit grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 1144:gap-4 gap-2">
                         <ListItems

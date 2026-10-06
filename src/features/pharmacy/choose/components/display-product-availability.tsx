@@ -76,7 +76,7 @@ export const DisplayProductAvailability = ({
                                 </div>
                                 <p className={cn(
                                     "whitespace-nowrap text-sm font-medium leading-[120%]",
-                                    item.availableQuantity === 0 && "text-red-500 text-wrap text-center"
+                                    item.availableQuantity === 0 && "text-destructive text-wrap text-center"
                                 )}>
                                     { item.isAvailable ? (
                                         `(${item.selectedQuantity} из ${item.selectedQuantity})`

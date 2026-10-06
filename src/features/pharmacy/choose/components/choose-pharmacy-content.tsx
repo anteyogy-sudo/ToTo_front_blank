@@ -116,17 +116,17 @@ export const ChoosePharmacyContent = ({ selectedMode, setSelectedMode }: Props) 
                     </div>
                 </div>
 
-                <div className="w-[217px] h-[49px] p-[3px] rounded-[24px] border border-[#CCCCCC] flex mr-5">
+                <div className="w-[217px] h-[49px] p-[3px] rounded-[24px] border border-gray-3 flex mr-5">
                     <Button
                         onClick={() => setSelectedMode("map")}
-                        className={`${selectedMode === "map" ? "bg-primary-blue text-white-500 " : "bg-white-500 text-[#21212C]"} 
+                        className={`${selectedMode === "map" ? "bg-primary-blue text-white-500 " : "bg-white-500 text-ink"} 
                                 shadow-none rounded-[24px] px-5 h-[43px] font-bold text-[18px] leading-[120%] hover:scale-[100%] transition-none`}
                     >
                         Картой
                     </Button>
                     <Button
                         onClick={() => setSelectedMode("list")}
-                        className={`${selectedMode === "list" ? "bg-primary-blue text-white-500 " : "bg-white-500 text-[#21212C]"} 
+                        className={`${selectedMode === "list" ? "bg-primary-blue text-white-500 " : "bg-white-500 text-ink"} 
                                 shadow-none rounded-[24px] px-5 h-[43px] font-bold text-[18px] leading-[120%] hover:scale-[100%] transition-none`}
                     >
                         Списком

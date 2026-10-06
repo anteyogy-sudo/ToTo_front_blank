@@ -65,7 +65,7 @@ const CustomSelect: React.FC<CustomSelectProps> = ({
         <div className="relative" ref={containerRef}>
             <div
                 className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-blue cursor-pointer flex justify-between items-center ${
-                    error ? 'border-red-500' : 'border-gray-300'
+                    error ? 'border-destructive' : 'border-gray-300'
                 }`}
                 style={{ backgroundColor: 'white' }}
                 onClick={() => setIsOpen(!isOpen)}
@@ -225,7 +225,7 @@ const FeedbackSection = () => {
                 {/* Тема обращения */}
                 <div>
                     <label className='block text-sm font-medium text-gray-700 mb-1'>
-                        Тема обращения <span className="text-red-500">*</span>
+                        Тема обращения <span className="text-destructive">*</span>
                     </label>
                     <CustomSelect
                         options={TOPICS}
@@ -234,13 +234,13 @@ const FeedbackSection = () => {
                         onChange={setTopic}
                         error={!!errors.topic}
                     />
-                    {errors.topic && <p className='text-red-500 text-sm mt-1'>{errors.topic}</p>}
+                    {errors.topic && <p className='text-destructive text-sm mt-1'>{errors.topic}</p>}
                 </div>
 
                 {/* Типовая ситуация */}
                 <div>
                     <label className='block text-sm font-medium text-gray-700 mb-1'>
-                        Типовая ситуация <span className="text-red-500">*</span>
+                        Типовая ситуация <span className="text-destructive">*</span>
                     </label>
                     <CustomSelect
                         options={SITUATIONS}
@@ -249,24 +249,24 @@ const FeedbackSection = () => {
                         onChange={setSituation}
                         error={!!errors.situation}
                     />
-                    {errors.situation && <p className='text-red-500 text-sm mt-1'>{errors.situation}</p>}
+                    {errors.situation && <p className='text-destructive text-sm mt-1'>{errors.situation}</p>}
                 </div>
 
                 {/* Введите запрос */}
                 <div>
                     <label className='block text-sm font-medium text-gray-700 mb-1'>
-                        Введите запрос <span className="text-red-500">*</span>
+                        Введите запрос <span className="text-destructive">*</span>
                     </label>
                     <textarea
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         rows={5}
                         className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-blue resize-none ${
-                            errors.message ? 'border-red-500' : 'border-gray-300'
+                            errors.message ? 'border-destructive' : 'border-gray-300'
                         }`}
                         placeholder="Опишите, пожалуйста, причину обращения и подробно расскажите о проблеме. Вы можете также приложить файл со снимком экрана"
                     />
-                    {errors.message && <p className='text-red-500 text-sm mt-1'>{errors.message}</p>}
+                    {errors.message && <p className='text-destructive text-sm mt-1'>{errors.message}</p>}
                 </div>
 
                 {/* Изображение */}
@@ -315,7 +315,7 @@ const FeedbackSection = () => {
                         />
                     </div>
                     <div className="md:col-span-1 text-sm text-gray-500 mt-2 py-4 md:mt-0">
-                        <span className="text-red-500">*</span> Заполняется автоматически, при наличии у клиента
+                        <span className="text-destructive">*</span> Заполняется автоматически, при наличии у клиента
                     </div>
                 </div>
 
@@ -323,13 +323,13 @@ const FeedbackSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="md:col-span-2">
                         <label className='block text-sm font-medium text-gray-700 mb-1'>
-                            Аптека <span className="text-red-500">*</span>
+                            Аптека <span className="text-destructive">*</span>
                         </label>
                         <select
                             value={pharmacy}
                             onChange={(e) => setPharmacy(e.target.value)}
                             className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-blue ${
-                                errors.pharmacy ? 'border-red-500' : 'border-gray-300'
+                                errors.pharmacy ? 'border-destructive' : 'border-gray-300'
                             }`}
                         >
                             <option value="">Открыть список</option>
@@ -337,7 +337,7 @@ const FeedbackSection = () => {
                                 <option key={opt.value} value={opt.label}>{opt.label}</option>
                             ))}
                         </select>
-                        {errors.pharmacy && <p className='text-red-500 text-sm mt-1'>{errors.pharmacy}</p>}
+                        {errors.pharmacy && <p className='text-destructive text-sm mt-1'>{errors.pharmacy}</p>}
                     </div>
                     <div className="md:col-span-1 text-sm text-gray-500 mt-2 py-4 md:mt-0">
                         Выберите аптеку в списке, с которой связано обращение
@@ -347,7 +347,7 @@ const FeedbackSection = () => {
                 {/* Имя */}
                 <div>
                     <label className='block text-sm font-medium text-gray-700 mb-1'>
-                        Имя <span className="text-red-500">*</span>
+                        Имя <span className="text-destructive">*</span>
                     </label>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div className="md:col-span-2">
@@ -356,11 +356,11 @@ const FeedbackSection = () => {
                                 value={firstName}
                                 onChange={(e) => setFirstName(e.target.value)}
                                 className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-blue ${
-                                    errors.firstName ? 'border-red-500' : 'border-gray-300'
+                                    errors.firstName ? 'border-destructive' : 'border-gray-300'
                                 }`}
                                 placeholder=""
                             />
-                            {errors.firstName && <p className='text-red-500 text-sm mt-1'>{errors.firstName}</p>}
+                            {errors.firstName && <p className='text-destructive text-sm mt-1'>{errors.firstName}</p>}
                         </div>
                         <div className="md:col-span-1"></div>
                     </div>
@@ -369,7 +369,7 @@ const FeedbackSection = () => {
                 {/* Фамилия */}
                 <div>
                     <label className='block text-sm font-medium text-gray-700 mb-1'>
-                        Фамилия <span className="text-red-500">*</span>
+                        Фамилия <span className="text-destructive">*</span>
                     </label>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div className="md:col-span-2">
@@ -378,11 +378,11 @@ const FeedbackSection = () => {
                                 value={lastName}
                                 onChange={(e) => setLastName(e.target.value)}
                                 className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-blue ${
-                                    errors.lastName ? 'border-red-500' : 'border-gray-300'
+                                    errors.lastName ? 'border-destructive' : 'border-gray-300'
                                 }`}
                                 placeholder=""
                             />
-                            {errors.lastName && <p className='text-red-500 text-sm mt-1'>{errors.lastName}</p>}
+                            {errors.lastName && <p className='text-destructive text-sm mt-1'>{errors.lastName}</p>}
                         </div>
                         <div className="md:col-span-1"></div>
                     </div>
@@ -393,7 +393,7 @@ const FeedbackSection = () => {
                     {/* Email */}
                     <div className='mb-4'>
                         <label className='block text-sm font-medium text-gray-700 mb-1'>
-                            E-mail <span className="text-red-500">*</span>
+                            E-mail <span className="text-destructive">*</span>
                         </label>
                         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
                             <div className='md:col-span-2'>
@@ -402,11 +402,11 @@ const FeedbackSection = () => {
                                     value={emailValue}
                                     onChange={(e) => setEmailValue(e.target.value)}
                                     className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-blue ${
-                                        errors.email ? 'border-red-500' : 'border-gray-300'
+                                        errors.email ? 'border-destructive' : 'border-gray-300'
                                     }`}
                                     placeholder='example@mail.ru'
                                 />
-                                {errors.email && <p className='text-red-500 text-sm mt-1'>{errors.email}</p>}
+                                {errors.email && <p className='text-destructive text-sm mt-1'>{errors.email}</p>}
                             </div>
                             <div className='md:col-span-1'></div>
                         </div>
@@ -415,7 +415,7 @@ const FeedbackSection = () => {
                     {/* Телефон */}
                     <div className='mb-4'>
                         <label className='block text-sm font-medium text-gray-700 mb-1'>
-                            Номер телефона <span className="text-red-500">*</span>
+                            Номер телефона <span className="text-destructive">*</span>
                         </label>
                         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
                             <div className='md:col-span-2'>
@@ -424,11 +424,11 @@ const FeedbackSection = () => {
                                     value={phoneValue}
                                     onChange={handlePhoneChange}
                                     className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-blue ${
-                                        errors.phone ? 'border-red-500' : 'border-gray-300'
+                                        errors.phone ? 'border-destructive' : 'border-gray-300'
                                     }`}
                                     placeholder='+7 (___) ___-__-__'
                                 />
-                                {errors.phone && <p className='text-red-500 text-sm mt-1'>{errors.phone}</p>}
+                                {errors.phone && <p className='text-destructive text-sm mt-1'>{errors.phone}</p>}
                             </div>
                             <div className='md:col-span-1'></div>
                         </div>
@@ -488,7 +488,7 @@ const FeedbackSection = () => {
                 <Button
                     type="submit"
                     disabled={mutation.isPending}
-                    className='w-full lg:w-auto px-20 py-6 bg-[#0055CA] hover:bg-[#0055CA] text-[#F7F7F7]'
+                    className='w-full lg:w-auto px-20 py-6 bg-primary-blue hover:bg-primary-dark text-white-500'
                 >
                     {mutation.isPending ? 'Отправка...' : 'Отправить'}
                 </Button>

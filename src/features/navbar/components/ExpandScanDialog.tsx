@@ -28,7 +28,7 @@ const ExpandScanDialog = ({ open, onClose }: Props) => {
 
                     <button onClick={onClose}>
                         <X strokeWidth='1px' strokeLinecap="round" strokeLinejoin="round"
-                           className='text-[#8E9AAB] absolute z-10 sm:right-[30px] sm:top-[28px] top-[12px] right-[18px] sm:size-[42px] size-[24px]'/>
+                           className='text-gray-200 absolute z-10 sm:right-[30px] sm:top-[28px] top-[12px] right-[18px] sm:size-[42px] size-[24px]'/>
                     </button>
                     <div className='absolute top-0 w-full h-full z-1'>
                         { user?.loyalty_code && (

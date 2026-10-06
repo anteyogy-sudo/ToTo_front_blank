@@ -76,7 +76,7 @@ const ProductMap: React.FC<ProductMapProps> = ({
 
         const matchesFullTime = filterPharmacy.allDay ? val.fullTime : true;
 
-        const matchesStock = filterPharmacy.haveStock ? val.quantity_in_stock > 0 : true;
+        const matchesStock = filterPharmacy.haveStock ? (val.quantity_in_stock ?? 0) > 0 : true;
 
         return matchesSearch && matchesFullTime && matchesStock;
     });
@@ -237,7 +237,7 @@ const ProductMap: React.FC<ProductMapProps> = ({
                                 className={`${
                                     selectedMapVersion === 1
                                         ? "bg-primary-blue text-white-500"
-                                        : "bg-white-500 text-[#21212C]"
+                                        : "bg-white-500 text-ink"
                                 } rounded-[24px] px-6 h-[43px] font-bold text-[18px] leading-[120%]`}
                             >
                                 Картой
@@ -248,7 +248,7 @@ const ProductMap: React.FC<ProductMapProps> = ({
                                 className={`${
                                     selectedMapVersion === 2
                                         ? "bg-primary-blue text-white-500"
-                                        : "bg-white-500 text-[#21212C]"
+                                        : "bg-white-500 text-ink"
                                 } rounded-[24px] px-6 h-[43px] font-bold text-[18px] leading-[120%]`}
                             >
                                 Списком

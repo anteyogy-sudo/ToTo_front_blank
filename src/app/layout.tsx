@@ -4,6 +4,7 @@ import {cn} from "@/lib/utils";
 import localFont from "next/font/local";
 import Script from "next/script";
 import {QueryClientWrapper} from "@/wrappers/QueryClientWrapper";
+import {BRAND_CLASS} from "@/configs/brand";
 import {ReactNode} from "react";
 
 const apiKey = process.env.YANDEX_API_KEY || "841198fb-e942-4b66-bdff-19bd7c578805";
@@ -34,7 +35,7 @@ export default function RootLayout({ children, }: {
     children: ReactNode;
 }) {
     return (
-        <html lang="en">
+        <html lang="en" className={BRAND_CLASS}>
             <head>
                 {/* Ссылки для оптимизации загрузки страницы */}
                 <link rel="preconnect" href="https://cdn.diginetica.net/" />

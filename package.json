@@ -5,9 +5,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:antey": "cross-env NEXT_PUBLIC_BRAND=antey next dev",
+    "dev:zoo": "cross-env NEXT_PUBLIC_BRAND=zoo next dev",
     "build": "next build",
+    "build:antey": "cross-env NEXT_PUBLIC_BRAND=antey next build",
+    "build:zoo": "cross-env NEXT_PUBLIC_BRAND=zoo next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "brand:audit": "node scripts/brand-colors.mjs --audit"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.0",
@@ -65,6 +71,7 @@
     "@typescript-eslint/eslint-plugin": "^8.62.1",
     "@typescript-eslint/parser": "^8.62.1",
     "@yandex/ymaps3-types": "^1.0.19017058",
+    "cross-env": "^10.1.0",
     "eslint": "^9.39.4",
     "eslint-config-next": "^16.2.12",
     "postcss": "^8",

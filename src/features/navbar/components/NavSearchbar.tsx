@@ -193,7 +193,7 @@ export const NavSearchbar = () => {
                                     }}
                                     className="ml-2 rounded-full p-1 transition-all hover:bg-gray-200"
                                 >
-                                    <XIcon className="h-4 w-4 text-gray-500 hover:text-red-500" />
+                                    <XIcon className="h-4 w-4 text-gray-500 hover:text-destructive" />
                                 </button>
                             </div>
 
@@ -266,7 +266,7 @@ export const NavSearchbar = () => {
                     {visibleProducts.map((product, index) => (
                         <div
                             key={product.id}
-                            className="group relative flex cursor-pointer items-center gap-4 rounded-2xl p-4 transition-colors hover:bg-[#ECF3F5]"
+                            className="group relative flex cursor-pointer items-center gap-4 rounded-2xl p-4 transition-colors hover:bg-surfaceHover"
                             onClick={(e) => {
                                 e.stopPropagation();
                                 handleProductClick(product.id);
@@ -283,7 +283,7 @@ export const NavSearchbar = () => {
                             </div>
 
                             <div className="min-w-0 flex-1">
-                                <p className="line-clamp-2 text-[16px] font-regular text-gray-900 transition-colors group-hover:text-[#005CA7]">
+                                <p className="line-clamp-2 text-[16px] font-regular text-gray-900 transition-colors group-hover:text-primary-blue">
                                     {product.name}
                                 </p>
                             </div>
@@ -327,19 +327,19 @@ export const NavSearchbar = () => {
                                                         )}
                                                         <div className="flex items-center gap-1">
                                                             {showDiscountBadge && (
-                                                                <div className="w-fit rounded-[99px] bg-[#E53527] px-2 py-0.5 text-[14px] leading-[110%] text-white-500">
+                                                                <div className="w-fit rounded-[99px] bg-primary-red px-2 py-0.5 text-[14px] leading-[110%] text-white-500">
                                                                     -{discountAmount} ₽
                                                                 </div>
                                                             )}
 
                                                             {showRecipeBadge && (
-                                                                <div className="w-fit rounded-[99px] bg-[#CA2D74] px-2 py-0.5 text-[14px] leading-[110%] text-white-500">
+                                                                <div className="w-fit rounded-[99px] bg-primary-pink px-2 py-0.5 text-[14px] leading-[110%] text-white-500">
                                                                     По рецепту
                                                                 </div>
                                                             )}
 
                                                             {showBonusBadge && (
-                                                                <div className="flex w-fit items-center gap-1 rounded-[99px] bg-[#005CA7] px-2 py-0.5 text-[14px] leading-[110%] text-white-500">
+                                                                <div className="flex w-fit items-center gap-1 rounded-[99px] bg-primary-blue px-2 py-0.5 text-[14px] leading-[110%] text-white-500">
                                                                     +{discountAmount}
                                                                     <Image
                                                                         src={bonusIcon}
@@ -404,7 +404,7 @@ export const NavSearchbar = () => {
                     {visibleProducts.map((product, index) => (
                         <div
                             key={product.id}
-                            className="group relative flex cursor-pointer items-start gap-3 rounded-xl p-3 transition-colors hover:bg-[#ECF3F5]"
+                            className="group relative flex cursor-pointer items-start gap-3 rounded-xl p-3 transition-colors hover:bg-surfaceHover"
                             onClick={(e) => {
                                 e.stopPropagation();
                                 handleProductClick(product.id);
@@ -423,7 +423,7 @@ export const NavSearchbar = () => {
 
                             {/* Описание */}
                             <div className="min-w-0 flex-1 pr-2">
-                                <p className="line-clamp-3 text-[16px] font-regular text-gray-900 transition-colors group-hover:text-[#005CA7]">
+                                <p className="line-clamp-3 text-[16px] font-regular text-gray-900 transition-colors group-hover:text-primary-blue">
                                     {product.name}
                                 </p>
 
@@ -462,19 +462,19 @@ export const NavSearchbar = () => {
                                                     )}
 
                                                     {showDiscountBadge && (
-                                                        <div className="w-fit rounded-[99px] bg-[#E53527] px-2 py-0.5 text-[14px] leading-[110%] text-white-500">
+                                                        <div className="w-fit rounded-[99px] bg-primary-red px-2 py-0.5 text-[14px] leading-[110%] text-white-500">
                                                             -{discountAmount} ₽
                                                         </div>
                                                     )}
 
                                                     {showRecipeBadge && (
-                                                        <div className="w-fit rounded-[99px] bg-[#CA2D74] px-2 py-0.5 text-[14px] leading-[110%] text-white-500">
+                                                        <div className="w-fit rounded-[99px] bg-primary-pink px-2 py-0.5 text-[14px] leading-[110%] text-white-500">
                                                             По рецепту
                                                         </div>
                                                     )}
 
                                                     {showBonusBadge && (
-                                                        <div className="flex w-fit items-center gap-1 rounded-[99px] bg-[#005CA7] px-2 py-0.5 text-[14px] leading-[110%] text-white-500">
+                                                        <div className="flex w-fit items-center gap-1 rounded-[99px] bg-primary-blue px-2 py-0.5 text-[14px] leading-[110%] text-white-500">
                                                             +{discountAmount}
                                                             <Image
                                                                 src={bonusIcon}
@@ -540,7 +540,7 @@ export const NavSearchbar = () => {
                         );
                         handleCloseSearch();
                     }}
-                    className="w-full rounded-lg border-2 border-[#005CA7] py-3 text-center text-[18px] font-bold text-[#005CA7] transition-colors duration-200 hover:bg-[#005CA7] hover:text-white-100"
+                    className="w-full rounded-lg border-2 border-primary-blue py-3 text-center text-[18px] font-bold text-primary-blue transition-colors duration-200 hover:bg-primary-blue hover:text-white-100"
                 >
                     Смотреть все товары
                 </button>
@@ -589,7 +589,7 @@ export const NavSearchbar = () => {
             <div
                 className="relative z-50 hidden h-full w-full items-center justify-between gap-2 rounded-2xl bg-primary-light-white px-6 text-primary-gray transition-all xl:flex"
                 style={{
-                    border: "3px solid #005CA7",
+                    border: "3px solid hsl(var(--brand))",
                     backgroundColor: isSearchActive ? "white" : undefined,
                 }}
             >
@@ -622,7 +622,7 @@ export const NavSearchbar = () => {
                             onClick={handleClearQuery}
                             className="flex-shrink-0 rounded-full p-0.5 transition-all hover:bg-gray-200"
                         >
-                            <XIcon className="h-5 w-5 text-gray-500 hover:text-red-500" />
+                            <XIcon className="h-5 w-5 text-gray-500 hover:text-destructive" />
                         </button>
                     )}
                 </form>
@@ -635,7 +635,7 @@ export const NavSearchbar = () => {
                         style={{
                             border: "3px solid transparent",
                             background: `linear-gradient(white, white) padding-box,
-                            linear-gradient(to bottom, #005CA7, #5EB7FF) border-box`,
+                            linear-gradient(to bottom, hsl(var(--brand)), hsl(var(--brand-bright))) border-box`,
                         }}
                         onClick={stopPropagation}
                     >
@@ -647,7 +647,7 @@ export const NavSearchbar = () => {
                 {/*{isDropdownOpen && (*/}
                 {/*    <div*/}
                 {/*        ref={dropdownRef}*/}
-                {/*        className="absolute left-0 right-0 top-full z-50 mx-auto mt-2 w-full max-w-6xl overflow-hidden rounded-xl border-2 border-[#005CA7] bg-white shadow-lg"*/}
+                {/*        className="absolute left-0 right-0 top-full z-50 mx-auto mt-2 w-full max-w-6xl overflow-hidden rounded-xl border-2 border-primary-blue bg-white shadow-lg"*/}
                 {/*        style={{ backgroundColor: "white" }}*/}
                 {/*        onClick={stopPropagation}*/}
                 {/*    >*/}
@@ -662,7 +662,7 @@ export const NavSearchbar = () => {
                 <button
                     type="button"
                     onClick={handleInputFocus}
-                    className="flex h-11 w-full items-center gap-2 rounded-2xl border-2 border-[#005CA7] bg-[#f5f6f7] px-4"
+                    className="flex h-11 w-full items-center gap-2 rounded-2xl border-2 border-primary-blue bg-[#f5f6f7] px-4"
                 >
                     <Image
                         src={isSearchActive ? SearchActive : Search}
@@ -697,7 +697,7 @@ export const NavSearchbar = () => {
                             </button>
 
                             <form onSubmit={onSubmit} className="flex-1">
-                                <div className="relative flex h-11 items-center gap-2 overflow-hidden rounded-2xl border-2 border-[#005CA7] bg-[#f5f6f7] px-3 pr-10">
+                                <div className="relative flex h-11 items-center gap-2 overflow-hidden rounded-2xl border-2 border-primary-blue bg-[#f5f6f7] px-3 pr-10">
                                     <Image
                                         src={SearchActive}
                                         alt="search"
@@ -722,7 +722,7 @@ export const NavSearchbar = () => {
                                             onClick={handleClearQuery}
                                             className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 transition-all hover:bg-gray-100"
                                         >
-                                            <XIcon className="h-5 w-5 text-gray-500 hover:text-red-500" />
+                                            <XIcon className="h-5 w-5 text-gray-500 hover:text-destructive" />
                                         </button>
                                     )}
                                 </div>

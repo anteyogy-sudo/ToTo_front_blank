@@ -4,11 +4,13 @@ services:
     frontend:
         build:
             context: .
+            args:
+                NEXT_PUBLIC_BRAND: ${NEXT_PUBLIC_BRAND:-antey}
         container_name: frontend
         restart: unless-stopped
         tty: true
         environment:
-            - ./.env.local
+            NEXT_PUBLIC_BRAND: ${NEXT_PUBLIC_BRAND:-antey}
         expose:
             - "3000"
 

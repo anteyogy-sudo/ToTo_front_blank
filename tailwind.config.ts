@@ -7,6 +7,10 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/features/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/icons/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/layouts/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/shared/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/widgets/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -50,16 +54,23 @@ const config: Config = {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
-          blue: "#005ca7",
+          blue: "hsl(var(--brand) / <alpha-value>)",
           gray: "#8E9AAB",
           "light-white": "#F9F9F9",
           "black-gray": "#64676A",
           "black-gray2": "#525252",
-          red: "#E53527",
-          yellow: "#FAB600",
-          softBlue: "#9BACD7",
-          purple: "#9E56D8",
+          red: "hsl(var(--brand-accent) / <alpha-value>)",
+          pink: "hsl(var(--brand-accent-2) / <alpha-value>)",
+          yellow: "hsl(var(--brand-warning) / <alpha-value>)",
+          softBlue: "hsl(var(--brand-soft) / <alpha-value>)",
+          purple: "hsl(var(--brand-shine-d) / <alpha-value>)",
+          dark: "hsl(var(--brand-dark) / <alpha-value>)",
+          bright: "hsl(var(--brand-bright) / <alpha-value>)",
         },
+        /* Поверхности и текст, зависящие от бренда */
+        surface: "hsl(var(--brand-surface) / <alpha-value>)",
+        surfaceHover: "hsl(var(--brand-hover) / <alpha-value>)",
+        ink: "hsl(var(--brand-ink-soft) / <alpha-value>)",
         black: {
           "100": "#121212",
           "200": "#12121233",
@@ -72,19 +83,21 @@ const config: Config = {
           dark: "#64676A"
         },
         green: {
-          500: "#0DB85C",
+          500: "hsl(var(--brand-success) / <alpha-value>)",
+          leaf: "hsl(var(--brand-leaf) / <alpha-value>)",
+          mint: "hsl(var(--brand-success-soft) / <alpha-value>)",
         },
         blue: {
-          lightBlue: "#EEF7FF",
-          light: "#F3FAFF",
-          medium: "#6CB0E0",
+          lightBlue: "hsl(var(--brand-tint) / <alpha-value>)",
+          light: "hsl(var(--brand-tint-2) / <alpha-value>)",
+          medium: "hsl(var(--brand-medium) / <alpha-value>)",
           blueGray: "#8E9AAB",
-          soft: "#FCFDFF",
-          strong: "#0081D3",
+          soft: "hsl(var(--brand-frost) / <alpha-value>)",
+          strong: "hsl(var(--brand-strong) / <alpha-value>)",
           ghostBlue: "#F6F7FA",
-          "light-gray": "#CDDAEC",
-          lightGrayBlue: "#D3E8F8",
-          lightGrayBlue2: "#E7F4FF"
+          "light-gray": "hsl(var(--brand-line) / <alpha-value>)",
+          lightGrayBlue: "hsl(var(--brand-line-2) / <alpha-value>)",
+          lightGrayBlue2: "hsl(var(--brand-tint-3) / <alpha-value>)"
         },
         white: {
           "100": "#F9F9F9",
@@ -96,7 +109,7 @@ const config: Config = {
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
-          blue: "#EEF7FF",
+          blue: "hsl(var(--brand-tint) / <alpha-value>)",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -123,6 +136,7 @@ const config: Config = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'promo': 'linear-gradient(to right, hsl(var(--brand-promo-a)), hsl(var(--brand-promo-b)), hsl(var(--brand-promo-c)))',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -151,7 +165,7 @@ const config: Config = {
             'custom-1': '-8.17px -7px 35px 0px #00000014',
             'custom-2': '11.67px 11.67px 58.33px 0px #00000014',
             'custom-product': '0px 0px 15px 0px #13141414',
-            'double': '10px 10px 20px 0px #62616E1A, -10px -10px 8px 0px #9292921A"',
+            'double': '10px 10px 20px 0px #62616E1A, -10px -10px 8px 0px #9292921A',
         },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

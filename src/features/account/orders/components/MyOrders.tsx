@@ -69,7 +69,7 @@ export const MyOrders = () => {
           </div>
         </div>
         { errorAll ? (
-            <p className="text-2xl font-bold text-red-500">Ошибка во время загрузки заказов</p>
+            <p className="text-2xl font-bold text-destructive">Ошибка во время загрузки заказов</p>
         ) : orders.length ? (
             <div className=" flex flex-col w-full gap-6">
               <ListItems items={orders} render={(order) =>

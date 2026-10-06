@@ -437,7 +437,7 @@ export const CatalogFilters = ({ category_id, onMutate, onClose, setResetFilterH
                                                         [filter.id]: e.target.value,
                                                     }))
                                                 }
-                                                className="w-full h-[44px] pl-12 pr-4 rounded-xl bg-primary-light-white border border-[#005ca7] shadow-sm text-[16px] focus:outline-none focus:border-[#005ca7]"
+                                                className="w-full h-[44px] pl-12 pr-4 rounded-xl bg-primary-light-white border border-primary-blue shadow-sm text-[16px] focus:outline-none focus:border-primary-blue"
                                             />
                                         </div>
 

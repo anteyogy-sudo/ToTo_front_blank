@@ -60,7 +60,7 @@ export const ChoosePharmacyButton = () => {
 
             <DialogContent
                 showX={false}
-                className={`max-h-full h-full max-w-1280 lg:p-10 bg-[#F7F7F7] p-0 lg:gap-[10px] gap-6 rounded-2xl overflow-hidden`}
+                className={`max-h-full h-full max-w-1280 lg:p-10 bg-surface p-0 lg:gap-[10px] gap-6 rounded-2xl overflow-hidden`}
             >
                 <DialogHeader className=" flex-row justify-between lg:p-0 p-6 pb-0">
                     <DialogTitle className=" lg:text-[40px] text-[24px] font-bold leading-[100%]">

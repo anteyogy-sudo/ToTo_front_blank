@@ -25,7 +25,7 @@
 //
 //     if(status === "error")
 //     {
-//         return <p className="text-red-500">Произошла ошибка при загрузке товаров.</p>;
+//         return <p className="text-destructive">Произошла ошибка при загрузке товаров.</p>;
 //     }
 //
 //     if (mounted && !cart.length) return null;

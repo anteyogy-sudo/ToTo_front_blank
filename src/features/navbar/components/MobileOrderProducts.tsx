@@ -17,25 +17,25 @@ export const MobileOrderProducts = ({orders, labels} : { orders : any, labels : 
   const { isOpenOrderSlide, setOpenOrderSlide } = useOrderStore();
 
   // const getColorClass = (variant: string) => {
-  //   if (variant === "100") return "bg-[#EEF7FF]";
+  //   if (variant === "100") return "bg-blue-lightBlue";
   //   if (variant === "0") return "bg-gold-500";
   //   if (["213", "200", "201", "214", "300"].includes(variant))
-  //     return "bg-[#0DB85C]";
+  //     return "bg-green-500";
   //   if (["210", "110", "215"].includes(variant)) return "bg-primary-blue";
   //   if (["202", "203", "211", "212", "111"].includes(variant))
-  //     return "bg-[#E53527]";
+  //     return "bg-primary-red";
   //   if (["205", "206"].includes(variant)) return "bg-gray-500";
   //   return "bg-gray-300";
   // };
 
     const getColorClassOpacity = (variant: string) => {
-        if (variant === "100") return "bg-[#EEF7FF]";
-        if (variant === "0") return "bg-[#EEF7FF]";
+        if (variant === "100") return "bg-blue-lightBlue";
+        if (variant === "0") return "bg-blue-lightBlue";
         if (["213", "200", "201", "214", "300"].includes(variant))
-            return "bg-[#E4F6EF]";
-        if (["210", "110", "215"].includes(variant)) return "bg-[#EEF7FF]";
+            return "bg-green-mint";
+        if (["210", "110", "215"].includes(variant)) return "bg-blue-lightBlue";
         if (["202", "203", "211", "212", "111"].includes(variant))
-            return "bg-[#E53527]";
+            return "bg-primary-red";
         if (["205", "206"].includes(variant)) return "bg-gray-500";
         return "bg-gray-300";
     };
@@ -62,7 +62,7 @@ export const MobileOrderProducts = ({orders, labels} : { orders : any, labels : 
                                 return (
                                     <div key={item.id} className=" h-fit flex items-center gap-2">
                                         <div className="flex w-[56px] h-[56px] aspect-square min-w-[56px] bg-white-500 font-medium">
-                                            <Image src={item.images?.[0]?.url ?? NoPhoto}
+                                            <Image src={item.images?.[0] ?? NoPhoto}
                                                    alt={item.name} width={56} height={56}
                                                    className='object-contain w-full h-full'
                                             />

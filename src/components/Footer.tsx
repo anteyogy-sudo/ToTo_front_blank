@@ -12,12 +12,13 @@ import GooglePlayIcon from "@/assets/icons/downloadSection/GooglePlayIcon.svg"
 import AppStoreIcon from "@/assets/icons/downloadSection/AppStoreIcon.svg";
 import EmailSelector from "@/components/EmailSelector";
 import {PHONE_MAIN} from "@/constants/global.constants";
+import { BRAND_CONFIG } from "@/configs/brand";
 
 const Footer = () => {
-    const googlePlayLink = "https://play.google.com/store/apps/details?id=aptekaantey.ru.antey&hl=ru";
-    const ruStoreLink = "https://www.rustore.ru/catalog/app/aptekaantey.ru.antey";
-    const appGalleryLink = "https://appgallery.huawei.ru/app/C113974529";
-    const appStoreLink = "https://apps.apple.com/us/app/аптека-антей/id6760655657";
+    const googlePlayLink = BRAND_CONFIG.stores.googlePlay;
+    const ruStoreLink = BRAND_CONFIG.stores.ruStore;
+    const appGalleryLink = BRAND_CONFIG.stores.appGallery ?? BRAND_CONFIG.stores.googlePlay;
+    const appStoreLink = BRAND_CONFIG.stores.appStore;
 
     return (
         <footer className="w-full flex bg-white-500">
@@ -33,8 +34,8 @@ const Footer = () => {
                             <span>Звоните <a href={"tel:"+PHONE_MAIN} className="hover:underline whitespace-pre-line">{PHONE_MAIN}</a></span>
                             <span>Режим работы: пн-пт 9:00 – 18:00</span>
                             <span>Почта:
-                            <EmailSelector email="pk.antey@linkdoc.ru" className="hover:underline scale-[103%] transition-transform duration-500">
-                                pk.antey@linkdoc.ru
+                            <EmailSelector email={BRAND_CONFIG.email} className="hover:underline scale-[103%] transition-transform duration-500">
+                                {BRAND_CONFIG.email}
                             </EmailSelector>
                             </span>
                         </p>

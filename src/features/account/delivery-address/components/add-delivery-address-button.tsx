@@ -18,7 +18,7 @@ export const AddDeliveryAddressButton = () => {
     <Dialog open={openCreate} onOpenChange={setOpenCreate}>
       <DialogTrigger asChild>
         <button className=" w-fit h-[62px] px-6 flex items-center justify-center gap-2 text-primary-gray bg-blue-lightBlue rounded-2xl leading-[120%] text-[18px]">
-          <span className="text-[32px] text-[#64676A]">+</span>
+          <span className="text-[32px] text-primary-black-gray">+</span>
           Добавить новый адрес
         </button>
       </DialogTrigger>

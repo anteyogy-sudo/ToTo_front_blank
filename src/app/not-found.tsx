@@ -16,7 +16,7 @@ export default function NotFound() {
             <AllowCookies/>
 
             <div className="flex max-w-base mx-auto h-[calc(80vh-79px-env(safe-area-inset-bottom))] 1144:h-[85vh] flex-col gap-3 py-12 px-12 z-20
-                            bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-200 via-blue-50 to-[#f9f9f9] select-none">
+                            bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-medium via-blue-light to-[#f9f9f9] select-none">
                 <div className={"relative flex-[1_1_0] min-h-0"}>
                     <Image src={CatNotFound} fill priority className={"object-contain select-none"} draggable="false"
                            alt=''/>
@@ -28,7 +28,7 @@ export default function NotFound() {
                                alt=''/>
                         {/*<Image src={ArrowIcon} alt='arrow'/>*/}
                         <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect y="0.5" width="40" height="40" rx="8" fill="#005ca7"/>
+                            <rect y="0.5" width="40" height="40" rx="8" className="fill-primary-blue"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6667 20.5C11.6667 20.936 12.0813 21.2895 12.5927 21.2895H25.1721L21.8145 24.1523C21.4529 24.4606 21.4529 24.9605 21.8145 25.2688C22.1761 25.5771 22.7624 25.5771 23.1239 25.2688L28.0622 21.0582C28.4238 20.7499 28.4238 20.2501 28.0622 19.9418L23.1239 15.7312C22.7624 15.4229 22.1761 15.4229 21.8145 15.7312C21.4529 16.0395 21.4529 16.5394 21.8145 16.8477L25.1721 19.7105H12.5927C12.0813 19.7105 11.6667 20.064 11.6667 20.5Z" fill="#FFFFFF"/>
                         </svg>
 

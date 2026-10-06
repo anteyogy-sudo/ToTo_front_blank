@@ -3,7 +3,7 @@ import React from 'react';
 const SortingIcon = ({open} : {open : boolean}) => {
     return (
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.16667 6.66667H15.8333M9.16667 10H13.3333M9.16667 13.3333H11.6667M9.16667 3.33333H17.5M4.58333 17.5V2.5M4.58333 17.5C4 17.5 2.91 15.8383 2.5 15.4167M4.58333 17.5C5.16667 17.5 6.25667 15.8383 6.66667 15.4167" stroke={open ? "#005CA7" : '#8E9AAB'} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M9.16667 6.66667H15.8333M9.16667 10H13.3333M9.16667 13.3333H11.6667M9.16667 3.33333H17.5M4.58333 17.5V2.5M4.58333 17.5C4 17.5 2.91 15.8383 2.5 15.4167M4.58333 17.5C5.16667 17.5 6.25667 15.8383 6.66667 15.4167" stroke={open ? "hsl(var(--brand))" : '#8E9AAB'} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
 
     );

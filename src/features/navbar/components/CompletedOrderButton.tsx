@@ -92,13 +92,13 @@ export const CompletedOrderButton = ({ device }: Props) => {
   };
 
   const getColorClassOpacity = (variant: string) => {
-    if (variant === "100") return "bg-[#EEF7FF]";
-    if (variant === "0") return "bg-[#EEF7FF]";
+    if (variant === "100") return "bg-blue-lightBlue";
+    if (variant === "0") return "bg-blue-lightBlue";
     if (["213", "200", "201", "214", "300"].includes(variant))
-      return "bg-[#E4F6EF]";
-    if (["210", "110", "215"].includes(variant)) return "bg-[#EEF7FF]";
+      return "bg-green-mint";
+    if (["210", "110", "215"].includes(variant)) return "bg-blue-lightBlue";
     if (["202", "203", "211", "212", "111"].includes(variant))
-      return "bg-[#E53527]";
+      return "bg-primary-red";
     if (["205", "206"].includes(variant)) return "bg-gray-500";
     return "bg-gray-300";
   };
@@ -109,7 +109,7 @@ export const CompletedOrderButton = ({ device }: Props) => {
             onClick={() => setOpenOrder((prev) => !prev)}
             className={cn(" 1144:flex hidden h-[37px] rounded-[16px] text-white-500 px-4 font-bold text-[16px] w-[304px]",
                 getColorClass(String(orders?.data?.[0]?.status.code)),
-                orders?.data?.[0].status.code === 0 || orders?.data?.[0].status.code === 100 && !openOrder && 'border border-[#005CA7] text-primary-blue bg-[#F3FAFF]'
+                orders?.data?.[0].status.code === 0 || orders?.data?.[0].status.code === 100 && !openOrder && 'border border-primary-blue text-primary-blue bg-blue-light'
             )}
         >
           Ваш заказ №{orders?.data?.[0].id} -{" "}

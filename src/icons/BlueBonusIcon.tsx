@@ -7,7 +7,7 @@ export const BlueBonusIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect y="0.5" width="24" height="24" rx="12" fill="#005CA7" />
+      <rect y="0.5" width="24" height="24" rx="12" fill="hsl(var(--brand))" />
       <path
         d="M11.3198 12.8853V14.931H12.2143C12.978 14.931 13.4436 14.5873 13.4436 13.922V13.9109C13.4436 13.2401 12.9833 12.8853 12.2038 12.8853H11.3198Z"
         fill="white"

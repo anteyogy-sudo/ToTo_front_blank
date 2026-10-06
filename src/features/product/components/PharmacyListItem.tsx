@@ -88,7 +88,7 @@ const PharmacyListItem = ({
           <MoveRight size={20} className="text-primary-blue " />
         </div>
       </div>
-      {item.quantity_in_stock > 0 ? (
+      {(item.quantity_in_stock ?? 0) > 0 ? (
         <p className="font-medium text-[16px] leading-[120%] text-primary-blue">
           В наличии: {Number(item.quantity_in_stock)} шт.
         </p>

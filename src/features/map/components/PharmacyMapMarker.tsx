@@ -48,7 +48,7 @@ export const PharmacyMapMarker = (props: Props) => {
                     : "border-green-500 text-green-500 bg-white-500 border"
                 : isFullyAvailable
                   ? "bg-primary-blue text-white-500"
-                  : "border-[#FAB600] text-[#FAB600] bg-white-500 border"
+                  : "border-primary-yellow text-primary-yellow bg-white-500 border"
         );
 
         const indicatorVariant = isBestPrice ? "bestPrice" : "default";

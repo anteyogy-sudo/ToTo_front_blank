@@ -59,19 +59,19 @@ export const ProductCard = ({ product, className, cartVariant = "reserve"}: Prop
         >
             <div className="absolute top-5 left-5 z-20 flex flex-col gap-2 select-none pointer-events-none">
                 {showDiscountBadge && (
-                    <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-[#E53527] text-white-500 text-sm leading-[110%]">
+                    <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-primary-red text-white-500 text-sm leading-[110%]">
                         -{discountAmount} ₽
                     </div>
                 )}
 
                 {showRecipeBadge && (
-                    <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-[#CA2D74] text-white-500 text-sm leading-[110%]">
+                    <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-primary-pink text-white-500 text-sm leading-[110%]">
                         По рецепту
                     </div>
                 )}
 
                 {showBonusBadge && (
-                    <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-[#005CA7] text-white-500 text-sm leading-[110%]">
+                    <div className="w-fit py-1 px-3 flex items-center gap-1 rounded-[99px] bg-primary-blue text-white-500 text-sm leading-[110%]">
                         +{discountAmount}{" "}
                         <Image
                             src={bonusIcon}

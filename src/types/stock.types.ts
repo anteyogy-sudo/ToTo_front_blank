@@ -16,4 +16,8 @@ export interface StockProps {
         brand: string;
         city: string;
         city_id: number;
+        /** Остаток на складе — используется в ProductMap и PharmacyListItem */
+        quantity_in_stock?: number;
+        /** Цена товара — используется в PharmacyListItem */
+        website_price?: number;
 }

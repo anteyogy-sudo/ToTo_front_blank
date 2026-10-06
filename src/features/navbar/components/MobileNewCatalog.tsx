@@ -119,7 +119,7 @@ const MobileNewCatalog = () => {
                         //     onClick={() => setSelectedCatalogId(item.id)}
                         //     key={item.id}
                         //     className={`h-[56px] font-bold break-all leading-[120%] flex gap-3 cursor-pointer items-center rounded-[16px] hover:text-primary-blue transition-colors duration-500 ${
-                        //         item.id === selectedCatalogId && 'bg-[#EEF7FF] text-primary-blue'
+                        //         item.id === selectedCatalogId && 'bg-blue-lightBlue text-primary-blue'
                         //     } p-4`}
                         // >
                         //     <Image

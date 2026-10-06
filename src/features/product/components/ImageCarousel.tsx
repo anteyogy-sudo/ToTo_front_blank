@@ -147,9 +147,9 @@ export const ImageCarousel = ({ images, className }: ImageCarouselProps) => {
                                     type="button"
                                     onClick={() => handleThumbnailClick(realIndex)}
                                     className={cn(
-                                        "flex-shrink-0 w-12 h-12 rounded-lg border-2 transition-all duration-200 hover:border-blue-400 overflow-hidden",
+                                        "flex-shrink-0 w-12 h-12 rounded-lg border-2 transition-all duration-200 hover:border-primary-blue overflow-hidden",
                                         realIndex === currentImageIndex
-                                            ? "border-blue-500 shadow-md"
+                                            ? "border-primary-blue shadow-md"
                                             : "border-gray-200"
                                     )}
                                 >
@@ -196,7 +196,7 @@ export const ImageCarousel = ({ images, className }: ImageCarouselProps) => {
                             className={cn(
                                 "w-2 h-2 rounded-full transition-all duration-200",
                                 index === currentImageIndex
-                                    ? "bg-blue-500 scale-125"
+                                    ? "bg-primary-blue scale-125"
                                     : "bg-gray-300 hover:bg-gray-400"
                             )}
                             aria-label={`Перейти к изображению ${index + 1}`}

@@ -162,8 +162,8 @@ export const Navbar = () => {
                                         className="flex items-center gap-2 font-bold text-[16px] text-white border-[1px]
                                         rounded-[16px] h-[30px] px-2 leading-[120%] hover:opacity-80 transition-opacity duration-300"
                                         style={{
-                                            background: "linear-gradient(308.03deg, #8A5DF1 -46.76%, #0081D3 -13.68%, #EA75FC 60.72%, #FDE6A2 105.34%, #9E56D8 147.71%)",
-                                            border: "1px solid #BC93C7",
+                                            background: "linear-gradient(308.03deg, hsl(var(--brand-shine-a)) -46.76%, hsl(var(--brand-strong)) -13.68%, hsl(var(--brand-shine-b)) 60.72%, hsl(var(--brand-shine-c)) 105.34%, hsl(var(--brand-shine-d)) 147.71%)",
+                                            border: "1px solid hsl(var(--brand-shine-line))",
                                             color: "white",
                                         }}
                                     >

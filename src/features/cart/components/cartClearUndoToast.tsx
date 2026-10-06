@@ -91,7 +91,7 @@ export const UndoClearToast = ({ toastId, onUndo, onConfirm, duration = 5000 }: 
                 <div className="relative h-10 w-10">
                     <svg className="h-full w-full rotate-[-90deg]" viewBox="0 0 40 40">
                         <circle cx="20" cy="20" r={RADIUS} stroke="#E5E7EB" strokeWidth="3" fill="none" />
-                        <circle cx="20" cy="20" r={RADIUS} stroke="#3B82F6" strokeWidth="3" fill="none"
+                        <circle cx="20" cy="20" r={RADIUS} className="stroke-primary-blue" strokeWidth="3" fill="none"
                             strokeDasharray={CIRCUMFERENCE} strokeDashoffset={strokeDashoffset} strokeLinecap="round"
                         />
                     </svg>
