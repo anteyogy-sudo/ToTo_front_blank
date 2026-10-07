@@ -11,6 +11,7 @@ const config: Config = {
     "./src/layouts/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/shared/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/widgets/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/configs/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {

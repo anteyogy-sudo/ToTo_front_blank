@@ -110,11 +110,11 @@ export const Navbar = () => {
 
     return (
         <>
-            <BlockMobileApp
+            {/* <BlockMobileApp
                 isVisible={isBlockVisible}
                 setIsVisible={setIsBlockVisible}
                 isCatalogOpen={openCatalog}
-            />
+            /> */}
 
             <div className="bg-white-100 sticky top-0 z-[100] border-b">
                 <header className="bg-white-500 w-full flex flex-col py-3.5 z-40">
@@ -156,7 +156,7 @@ export const Navbar = () => {
                                 {/*    Акции*/}
                                 {/*</Link>*/}
                                 {/* Мобильное приложение */}
-                                <li>
+                                {/* <li>
                                     <Link
                                         href="/mobile-app"
                                         className="flex items-center gap-2 font-bold text-[16px] text-white border-[1px]
@@ -170,7 +170,7 @@ export const Navbar = () => {
                                         <Image src={MobilePhoneIcon} alt="Мобильное приложение" width={12}/>
                                         Мобильное приложение
                                     </Link>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>

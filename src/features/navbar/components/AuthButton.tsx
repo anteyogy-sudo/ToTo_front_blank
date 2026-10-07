@@ -1,10 +1,9 @@
 "use client";
 
-import userIcon from "@/assets/icons/user-icon.svg";
+import UserIcon from "@/icons/UserIcon";
 import { useAuthDialogStore } from "@/stores/useAuthDialogStore";
 import { useUserStore } from "@/stores/useUserStore";
 import { TriangleAlert } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import LoginDialog from "./LoginDialog";
 import { ensureAccessTokenCookie } from "@/utils/access-token";
@@ -35,16 +34,9 @@ export const AuthButton = ({ onNavigate }: Props) => {
       <button
         type="button"
         disabled
-        className="w-fit flex flex-col justify-between items-center text-center opacity-60 cursor-not-allowed h-[50px]"
+        className="w-fit flex flex-col justify-between items-center text-center opacity-6 cursor-not-allowed h-[50px]"
       >
-        <Image
-          src={userIcon}
-          alt="loading"
-          width={32}
-          height={32}
-          priority
-          className="animate-pulse"
-        />
+        <UserIcon size={32} className="animate-pulse" />
         <span className="w-fit select-none opacity-0 text-sm font-medium animate-pulse">
           {!user ? "Войти" : "Аккаунт"}
         </span>
@@ -66,7 +58,7 @@ export const AuthButton = ({ onNavigate }: Props) => {
       <Link href="/account"
             onClick={handleAccountClick}
             className="cursor-pointer w-fit flex flex-col justify-between items-center text-center h-[50px] hover:opacity-80 text-primary-gray hover:text-primary-blue transition-colors duration-300">
-        <Image src={userIcon} alt="account" width={32} height={32} priority />
+        <UserIcon size={32} />
         <span className="min-w-[52px] w-fit text-sm font-medium">{user.first_name}</span>
       </Link>
     );
@@ -77,7 +69,7 @@ export const AuthButton = ({ onNavigate }: Props) => {
       <button type="button"
               onClick={() => {onNavigate?.(); openLoginDialog(); }}
               className="w-fit flex flex-col items-center text-center h-[50px] hover:opacity-80 text-primary-gray hover:text-primary-blue transition-colors duration-300">
-        <Image src={userIcon} alt="login" width={32} height={32} priority />
+        <UserIcon size={32} />
         <span className="w-fit text-sm font-medium">Войти</span>
       </button>
 

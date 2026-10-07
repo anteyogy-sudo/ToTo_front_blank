@@ -64,11 +64,11 @@ const PharmacyAddressesDesktop = ({
     >
         <div className="w-full lg:grid hidden grid-cols-[37%_63%] h-fit gap-4 rounded-[16px]">
             <div className="flex flex-col gap-6 bg-white-500 h-full lg:p-6 p-4 overflow-hidden rounded-[16px]">
-                <p className="font-bold text-black-100 text-[40px] leading-[100%]">Адреса аптек</p>
+                <p className="font-bold text-black-100 text-[40px] leading-[100%]">Адреса магазинов</p>
                 <div className="w-full text-primary-gray flex bg-primary-light-white h-[48px] rounded-[16px] px-6 py-4 items-center gap-2">
                     <Image src={search} alt="search icon" width={24} height={24} priority />
                     <input
-                        placeholder="Введите адрес аптеки"
+                        placeholder="Введите адрес магазина"
                         type="text"
                         value={searchText}
                         className="w-full outline-none bg-transparent text-black-100"
@@ -166,7 +166,7 @@ const PharmacyAddresses = () => {
             ) : (
                 <>
                     <p className="lg:hidden block font-bold text-black-100 text-[32px] leading-[100%]">
-                        Адреса аптек
+                        Адреса магазинов
                     </p>
                     <div className="lg:hidden grid rounded-[16px] bg-white-500 grid-cols-2 p-1 gap-1 w-full">
                         <button

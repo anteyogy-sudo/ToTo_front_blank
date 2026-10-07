@@ -13,7 +13,7 @@ const Page = () => {
                         Главная
                     </Link>
                     <LineSVG />
-                    <span className="leading-[120%] text-black-100 font-medium">Адреса аптек</span>
+                    <span className="leading-[120%] text-black-100 font-medium">Адреса магазинов</span>
                 </div>
             </header>
             <PharmacyAddresses/>

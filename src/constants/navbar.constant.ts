@@ -5,7 +5,7 @@ export const NAVBAR_LINKS = {
           href: "/how-to-order",
       },
       {
-          name: "Найти аптеку",
+          name: "Найти магазин",
           href: "/pharmacy-addresses",
       },
       {
