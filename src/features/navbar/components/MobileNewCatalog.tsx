@@ -58,7 +58,7 @@ const MobileNewCatalog = () => {
                     className="flex w-fit h-fit p-2 rounded-full"
                     onClick={handleForwardBtnClick}
                 >
-                    <MoveLeft className='text-gray-400 hover:text-primary-blue transition-colors duration-500' />
+                    <MoveLeft className='text-gray-400 hover:text-primary-gray transition-colors duration-500' />
                 </button>
                 <div className={"w-full flex flex-row gap-2 justify-center items-center"} >
                     { selectedCatalogId && catalogSubitems?.data && (
@@ -78,7 +78,7 @@ const MobileNewCatalog = () => {
                     className="flex w-fit h-fit p-2 rounded-full"
                     onClick={() => setOpenCatalog(false)}
                 >
-                    <X className='text-gray-400 hover:text-primary-blue transition-colors duration-500' />
+                    <X className='text-gray-400 hover:text-primary-gray transition-colors duration-500' />
                 </button>
             </div>
             <hr />

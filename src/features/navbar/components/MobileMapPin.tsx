@@ -1,9 +1,9 @@
 "use client";
 
-import mapPin from "@/assets/icons/map-pin.svg";
+import MapPinSmall from "@/icons/map-pin-small";
 import { cn } from "@/lib/utils";
 import { CityProps } from "@/types/city.types";
-import Image from "next/image";
+
 import { useCities } from "../hooks/useCities";
 import { useCityStore } from "../stores/useCityStore";
 import { CitiesDialog } from "./CitiesDialog";
@@ -30,7 +30,7 @@ export const MobileMapPin = ({ cities, status }: Props) => {
           loading && "animate-pulse"
         )}
       >
-        <Image src={mapPin} alt="map pin" width={20} height={20} priority />{" "}
+        <MapPinSmall size={20} />{" "}
         {!loading ? isManualSelected ? confirmedCity.name : <>{confirmedCity.name}</> : "Загрузка..."}
       </button>
     </>

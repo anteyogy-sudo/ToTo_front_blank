@@ -589,7 +589,7 @@ export const NavSearchbar = () => {
             <div
                 className="relative z-50 hidden h-full w-full items-center justify-between gap-2 rounded-2xl bg-primary-light-white px-6 text-primary-gray transition-all xl:flex"
                 style={{
-                    border: "3px solid hsl(var(--brand))",
+                    border: "3px solid hsl(var(--brand-yellow))",
                     backgroundColor: isSearchActive ? "white" : undefined,
                 }}
             >

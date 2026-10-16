@@ -42,10 +42,11 @@ export const CatalogButton = () => {
   return (
     <>
       <Button
+        variant="yellow"
         onClick={onOpen}
-        className="flex gap-[8px] rounded-[16px] w-[122px] h-[44px] text-[18px]"
+        className="flex gap-[8px] rounded-[16px] w-[122px] h-[44px] text-[18px] text-black"
       >
-        <Image src={CatalogIcon} alt=''/> Каталог
+        <Image src={CatalogIcon} alt='' style={{ filter: 'brightness(0)' }}/> Каталог
       </Button>
 
       <Dialog open={open || openCatalog} onOpenChange={onClose}>

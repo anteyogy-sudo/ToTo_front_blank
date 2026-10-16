@@ -5,7 +5,7 @@ interface CartIconProps {
 }
 
 const CartIcon: React.FC<CartIconProps> = ({ cart = false }) => {
-    const color = !cart ? "hsl(var(--brand))" : "#FFFFFF";
+    const color = !cart ? "#8E8E93" : "#FFFFFF";
 
     return (
         <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">

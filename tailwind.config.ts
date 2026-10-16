@@ -62,7 +62,8 @@ const config: Config = {
           "black-gray2": "#525252",
           red: "hsl(var(--brand-accent) / <alpha-value>)",
           pink: "hsl(var(--brand-accent-2) / <alpha-value>)",
-          yellow: "hsl(var(--brand-warning) / <alpha-value>)",
+          yellow: "hsl(var(--brand-yellow) / <alpha-value>)",
+          
           softBlue: "hsl(var(--brand-soft) / <alpha-value>)",
           purple: "hsl(var(--brand-shine-d) / <alpha-value>)",
           dark: "hsl(var(--brand-dark) / <alpha-value>)",

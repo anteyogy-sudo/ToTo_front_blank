@@ -81,12 +81,11 @@
     --brand-hover: 193 31% 94%;    /* #ECF3F5 */
   }
 
-  /*
-   * Второй бренд (клон). Значения-заглушки тёплой палитры —
-   * заменить на согласованную дизайн-систему зоомагазина.
-   */
+  
   .brand-zoo {
-    --brand: 35 100% 45%;
+    --brand: 23 98% 52%;
+    --brand-yellow: 47 98% 51%;
+  
     --brand-strong: 52 100% 50%;
     --brand-medium: 28 78% 66%;
     --brand-soft: 30 55% 72%;
@@ -132,7 +131,7 @@
     --brand-shine-a: 28 90% 60%;
     --brand-shine-b: 12 88% 62%;
     --brand-shine-c: 42 96% 82%;
-    --brand-shine-d: 30 70% 50%;
+    --brand-shine-d: 331 60% 35%;
     --brand-shine-line: 26 55% 70%;
     --brand-glow-soft: 32 100% 90%;
     --brand-haze-3: 34 100% 90%;

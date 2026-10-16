@@ -100,7 +100,7 @@ if (variant === "reserveCompact") {
             </button>
 
             <Link href="/cart"
-                  className="flex flex-col items-center justify-center flex-1 min-w-0 h-full text-center bg-green-leaf text-white border-x border-white px-1 xs:px-2 sm:px-2"
+                  className="flex flex-col items-center justify-center flex-1 min-w-0 h-full text-center bg-primary-purple text-white border-x border-white px-1 xs:px-2 sm:px-2"
             >
                 <span className="w-full min-w-0 truncate text-[15px] xs:text-[12px] sm:text-[12px] leading-[110%] font-medium">
                     {amount} шт.
@@ -160,11 +160,11 @@ if (variant === "reserve") {
 
             <Link
                 href="/cart"
-                className={cn(
-                    "flex-1 min-w-0 h-full flex flex-col items-center justify-center text-center",
-                    "bg-green-leaf text-white border-x border-white overflow-hidden",
-                    compact ? "px-2" : "px-2 xs:px-3 sm:px-4 md:px-6"
-                )}
+className={cn(
+"flex-1 min-w-0 h-full flex flex-col items-center justify-center text-center",
+"bg-primary-purple text-white border-x border-white overflow-hidden",
+compact ? "px-2" : "px-2 xs:px-3 sm:px-4 md:px-6"
+)}
             >
                 <span className={cn("w-full min-w-0 truncate leading-[120%]",
                     compact ? "text-xs" : "text-[13px] xs:text-[14px] sm:text-[14px]")}
@@ -239,12 +239,12 @@ return (
 
         <Link
             href="/cart"
-            className={cn(
-                "flex-1 min-w-0 h-full flex flex-col items-center justify-center text-center",
-                "bg-green-leaf text-white border-x border-white",
-                compact ? "px-2" : "px-2 xs:px-3 sm:px-4 md:px-6",
-                "overflow-hidden"
-            )}
+className={cn(
+"flex-1 min-w-0 h-full flex flex-col items-center justify-center text-center",
+"bg-primary-purple text-white border-x border-white",
+compact ? "px-2" : "px-2 xs:px-3 sm:px-4 md:px-6",
+"overflow-hidden"
+)}
         >
                 <span
                     className={cn(
