@@ -15,7 +15,7 @@ export const NAVBAR_LINKS = {
   ],
   "row-2": [
       {
-          name: "Найти аптеку",
+          name: "Найти магазин",
           href: "/pharmacy-addresses",
       },
       {

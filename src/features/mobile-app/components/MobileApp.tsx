@@ -369,7 +369,7 @@ const MobileApp = () => {
                             md:text-[20px] md:space-y-3
                             sm:text-[20px] sm:space-y-3">
                             <p>
-                                Мы создали мобильное приложение &quot;Аптека Антей&quot;
+                                Мы создали мобильное приложение &quot;Магазин ТоТошка&quot;
                             </p>
                             <p className="relative z-30">
                                 Мы заботимся о наших клиентах,<br />

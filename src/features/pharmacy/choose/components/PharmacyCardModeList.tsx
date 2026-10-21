@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 import { usePharmacyStore } from "@/stores/usePharmacyStore";
 import {cn} from "@/lib/utils";
-import {useCartStore} from "@/stores/useCartStore";
+import {useCartStore, selectSelectedCartAmount} from "@/stores/useCartStore";
 import Image from "next/image";
 import CatWithGlass from "@/assets/resources/CatWithGlass.png"
 import {PharmacyInfo} from "@/features/pharmacy/PharmacyInfo";
@@ -28,7 +28,7 @@ const PharmacyCardModeList = ({ pharmacies, onSelectPharmacy, bestPricePharmacyI
 
     const { reset: resetPharmacy } = usePharmacyStore.getState();
 
-    const { selectedCartCount } = useCartStore();
+    const selectedCartCount = useCartStore(selectSelectedCartAmount);
 
     const selectedPharmacyStock = useMemo(
         () => pharmacies?.find((p) => p.id === selectedPharmacy?.id),
@@ -39,7 +39,7 @@ const PharmacyCardModeList = ({ pharmacies, onSelectPharmacy, bestPricePharmacyI
         return (
             <div className="flex flex-col h-full w-full justify-center items-center  ">
                 <Image src={NoMap} alt="No items for map"/>
-                <span className="font-medium text-primary-blue">Аптек <b>не найдено</b></span>
+                <span className="font-medium text-primary-blue">Магазинов <b>не найдено</b></span>
             </div>
         );
     }
@@ -105,21 +105,21 @@ const PharmacyCardModeList = ({ pharmacies, onSelectPharmacy, bestPricePharmacyI
 
                         {confirmedPharmacy?.id === selectedPharmacyStock.id ? (
                             <p className="text-xl font-bold text-primary-blue">
-                                Аптека уже выбрана
+                                Магазин уже выбран
                             </p>
                         ) : (
                             <Button
                                 onClick={() => onConfirmPharmacy(selectedPharmacyStock)}
                                 className="w-full h-[44px] rounded-2xl text-[18px] font-bold leading-[120%]"
                             >
-                                Выбрать эту аптеку
+                                Выбрать этот магазин
                             </Button>
                         )}
                     </div>
                 ) : (
                     <div className="w-full rounded-[16px] relative flex flex-col justify-center items-center gap-3 p-6">
                         <Image src={CatWithGlass} alt={"Cat image"}/>
-                        <span className="text-center font-bold text-[22px] leading-[144%]">Выберите аптеку слева, чтобы увидеть наличие товара</span>
+                        <span className="text-center font-bold text-[22px] leading-[144%]">Выберите магазин слева, чтобы увидеть наличие товара</span>
                     </div>
                 )}
             </div>

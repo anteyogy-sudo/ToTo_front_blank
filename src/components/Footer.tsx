@@ -60,7 +60,7 @@ const Footer = () => {
                                 <Link href='/how-to-order' className='w-fit text-blue-blueGray block  hover:font-medium hover:text-primary-blue transition duration-300 '>Как сделать заказ</Link>
                                 <Link href='/exchange-goods' className='w-fit text-blue-blueGray block hover:font-medium hover:text-primary-blue transition duration-300 '>Обмен и возврат</Link>
                                 <Link href='/contact-us' className='w-fit text-blue-blueGray block hover:font-medium hover:text-primary-blue transition duration-300 '>Связаться с нами</Link>
-                                <Link href='/pharmacy-addresses' className='w-fit text-blue-blueGray block hover:font-medium hover:text-primary-blue transition duration-300 '>Адреса аптек</Link>
+                                <Link href='/pharmacy-addresses' className='w-fit text-blue-blueGray block hover:font-medium hover:text-primary-blue transition duration-300 '>Адреса зоомагазинов</Link>
                                 <Link href='/questions' className='w-fit text-blue-blueGray block hover:font-medium hover:text-primary-blue transition duration-300 '>Часто задаваемые вопросы</Link>
                                 <Link href='/feedback' className='w-fit text-blue-blueGray block hover:font-medium hover:text-primary-blue transition duration-300 '>Обратная связь</Link>
                             </div>

@@ -9,7 +9,7 @@ import { getPharmacyCoordinates } from "@/features/map/utils/getPharmacyCoordina
 import { PHARMACY_MAP_OVERVIEW_ZOOM, PHARMACY_MAP_SELECT_ZOOM } from "@/features/map/constants";
 import { useYandexMap } from "@/features/map/context/YandexMapContext";
 import { usePharmacyStore } from "@/stores/usePharmacyStore";
-import { useCartStore } from "@/stores/useCartStore";
+import { useCartStore, selectSelectedCartAmount } from "@/stores/useCartStore";
 import { PharmacyStockProps } from "@/types/pharmacy.types";
 import { PharmaciesList, PharmaciesListHandle } from "./pharmacies-list";
 import Image from "next/image";
@@ -24,7 +24,7 @@ interface Props {
 const CartMapLayoutInner = ({ pharmacies, status, bestPricePharmacyId }: Props) => {
     const { panTo } = useYandexMap();
     const listRef = useRef<PharmaciesListHandle>(null);
-    const { selectedCartCount } = useCartStore();
+    const selectedCartCount = useCartStore(selectSelectedCartAmount);
     const { selectedPharmacy, setSelectedPharmacy } = usePharmacyStore();
     const bestPricePharmacy = pharmacies.find((pharmacy) => pharmacy.id === bestPricePharmacyId);
     const cartTotalAmount = selectedCartCount ?? 0;

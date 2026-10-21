@@ -6,7 +6,7 @@ import { YandexMapRoot } from "@/features/map/components/YandexMapRoot";
 import { PharmacyMapMarkersLayer } from "@/features/map/components/PharmacyMapMarkersLayer";
 import { getPharmacyCoordinates } from "@/features/map/utils/getPharmacyCoordinates";
 import { usePharmacyStore } from "@/stores/usePharmacyStore";
-import { useCartStore } from "@/stores/useCartStore";
+import { useCartStore, selectSelectedCartAmount } from "@/stores/useCartStore";
 import { PharmacyStockProps } from "@/types/pharmacy.types";
 
 interface Props {
@@ -15,7 +15,7 @@ interface Props {
 }
 
 export const PharmaciesMap = ({ pharmacies, onSelectPharmacy }: Props) => {
-    const { selectedCartCount } = useCartStore();
+    const selectedCartCount = useCartStore(selectSelectedCartAmount);
     const { selectedPharmacy } = usePharmacyStore();
     const cartTotalAmount = selectedCartCount ?? 0;
 

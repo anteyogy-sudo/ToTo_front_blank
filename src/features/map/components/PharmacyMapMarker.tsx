@@ -100,7 +100,7 @@ export const PharmacyMapMarker = (props: Props) => {
                 <div className="lg:w-[36px] w-[34px] lg:h-[42px] h-[38px] cursor-pointer flex justify-center items-center translate-x-[-50%] translate-y-[-110%]">
                     <Image
                         src={MapPharmacyIcon}
-                        alt="Аптека"
+                        alt="Зоомагазин"
                         className="lg:w-[36px] w-[34px] lg:h-[42px] h-[38px]"
                     />
                 </div>
@@ -108,7 +108,7 @@ export const PharmacyMapMarker = (props: Props) => {
                 <div className="lg:w-[62px] w-[38px] lg:h-[39px] h-[20px] cursor-pointer flex justify-center items-center translate-x-[-35%] translate-y-[-110%]">
                     <Image
                         src={MapPharmacyIcon}
-                        alt="Аптека"
+                        alt="Зоомагазин"
                         className="lg:w-[46px] w-[34px] lg:h-[52px] h-[38px]"
                     />
                 </div>

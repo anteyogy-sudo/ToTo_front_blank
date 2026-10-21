@@ -75,7 +75,7 @@ const PharmacyListItem = ({
     >
       <div className="flex items-center justify-between gap-2">
         <p className="font-bold flex flex-col text-black-100 lg:text-[24px] text-[18px] lg:leading-[100%] leading-[120%] ">
-            <span className='flex gap-1'>Аптека вивАнтей  <Image src={AnteyLogo} alt='logo'/></span>
+            <span className='flex gap-1'>Магазин ТоТошка  <Image src={AnteyLogo} alt='logo'/></span>
             <span>{item.address} </span>
         </p>
         <div

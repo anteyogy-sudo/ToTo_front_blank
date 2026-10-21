@@ -90,7 +90,7 @@ const ProductMap: React.FC<ProductMapProps> = ({
                 className="w-full lg:py-10 py-6 2xl:px-20 lg:px-10 px-6 flex flex-col lg:gap-10 gap-6"
             >
                 <h2 className="font-bold text-black-100 leading-[100%] lg:text-[40px] text-[24px]">
-                    Наличие и цены на {product.name} в аптеках
+                    Наличие и цены на {product.name} в магазинах
                 </h2>
 
                 <div className="lg:hidden grid rounded-[16px] bg-white-500 grid-cols-2 p-1 gap-1 w-full">
@@ -149,7 +149,7 @@ const ProductMap: React.FC<ProductMapProps> = ({
                 <div className="flex lg:hidden w-full text-primary-gray bg-white-500 h-[48px] rounded-[16px] px-6 py-4 items-center gap-4">
                     <Image src={search} alt="search icon" width={24} height={24} priority />
                     <input
-                        placeholder="Введите адрес аптеки"
+                        placeholder="Введите адрес магазина"
                         type="text"
                         className="w-full outline-none bg-transparent text-black-100"
                         value={searchText}
@@ -175,7 +175,7 @@ const ProductMap: React.FC<ProductMapProps> = ({
                         ))}
 
                         {!filteredData.length && (
-                            <p className="font-medium text-primary-red">asdsaАптек не найдено.</p>
+                            <p className="font-medium text-primary-red">asdsaМагазинов не найдено.</p>
                         )}
                     </div>
                 )}
@@ -185,7 +185,7 @@ const ProductMap: React.FC<ProductMapProps> = ({
                         <div className="max-w-[613px] w-full text-primary-gray flex bg-primary-light-white h-full rounded-[16px] px-6 py-2 items-center gap-2">
                             <Image src={search} alt="search icon" width={24} height={24} priority />
                             <input
-                                placeholder="Введите адрес аптеки"
+                                placeholder="Введите адрес магазина"
                                 type="text"
                                 className="w-full outline-none bg-transparent text-black-100"
                                 value={searchText}
@@ -280,7 +280,7 @@ const ProductMap: React.FC<ProductMapProps> = ({
                                         />
                                     ))}
                                     {!filteredData.length && (
-                                        <p className="font-medium text-primary-red">Аптек не найдено12321</p>
+                                        <p className="font-medium text-primary-red">Магазинов не найдено12321</p>
                                     )}
                                 </div>
                             </div>

@@ -38,7 +38,7 @@ const Page = () => {
             <div className='bg-white-100 rounded-[16px] lg:p-6 p-4 flex lg:flex-row flex-col lg:gap-10 gap-6' style={{ backgroundColor: 'white' }}>
                 <Image src={HeroImg} alt='hero'/>
                 <div className='flex flex-col justify-center lg:gap-10 gap-6'>
-                    <h2 className='font-bold lg:text-[56px] text-[32px] text-black-100 leading-[100%]'>Бонусы за покупки <br className='lg:block hidden' /> в аптеках </h2>
+                    <h2 className='font-bold lg:text-[56px] text-[32px] text-black-100 leading-[100%]'>Бонусы за покупки <br className='lg:block hidden' /> в магазинах </h2>
                     <Button onClick={handleLogin} className="lg:max-w-[317px] h-[62px] w-full max-w-[317px] rounded-[18px] text-white-100 font-bold leading-[120%]">
                         Присоединиться
                     </Button>

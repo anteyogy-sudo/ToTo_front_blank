@@ -41,7 +41,7 @@ export const SearchBar = ({ className }: Props) => {
       <SearchIcon />
       <Input
         className=" w-full h-full px-0 focus-visible:ring-0 border-none shadow-none"
-        placeholder="Введите адрес аптеки"
+        placeholder="Введите адрес зоомагазина"
         value={query}
         onChange={(e) => setQuery(e.target.value) }
       />

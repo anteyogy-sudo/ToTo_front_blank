@@ -84,11 +84,11 @@ const HowToOrderButton = () => {
                                     <div className="space-y-2 sm:space-y-3 pl-1 sm:pl-2">
                                         <p className="flex items-start">
                                             <span className="font-bold mr-2 shrink-0">1.</span>
-                                            Посетить удобную аптеку
+                                            Посетить удобный магазин
                                         </p>
                                         <p className="flex items-start">
                                             <span className="font-bold mr-2 shrink-0">2.</span>
-                                            Сообщить наименование нужного препарата в аптеке и его можно забрать на следующий день
+                                            Сообщить наименование нужного товара в магазине и его можно забрать на следующий день
                                         </p>
                                     </div>
                                     <p className="font-medium pt-1 sm:pt-2">Подробности уточняйте по телефону:</p>

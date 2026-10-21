@@ -49,7 +49,7 @@ export const PharmaciesList = forwardRef<PharmaciesListHandle, Props>(function P
     }
 
     if (status === "error") {
-        return <p className="font-medium text-primary-red">Аптек не найдено</p>;
+        return <p className="font-medium text-primary-red">Магазинов не найдено</p>;
     }
 
     if (!pharmacies?.length) {

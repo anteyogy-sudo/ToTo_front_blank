@@ -308,7 +308,7 @@ const Product = ({ id }: { id: string }) => {
                                 <div className='flex gap-2'>
                                     <Image src={IconGeo} alt='geo' className="text-green-leaf" />
                                     <p className="font-bold text-[18px]">
-                                        Есть в {product?.data?.availableAt} аптеках
+                                        Есть в {product?.data?.availableAt} магазинах
                                     </p>
                                 </div>
                             )}

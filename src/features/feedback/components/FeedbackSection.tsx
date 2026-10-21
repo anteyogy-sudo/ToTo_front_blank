@@ -22,11 +22,11 @@ const SITUATIONS: Option[] = [
     { value: 'other', label: 'Иное' },
 ];
 
-// ToDo: Эээй, аптеки берём только настоящие, а не выдуманные!
+// ToDo: Эээй, Зоомагазины берём только настоящие, а не выдуманные!
 const PHARMACIES: Option[] = [
-    { value: 'pharm1', label: 'Аптека на ул. Ленинградская, 85' },
-    { value: 'pharm2', label: 'Аптека на ул. Мира, 5' },
-    { value: 'pharm3', label: 'Аптека на ул. Гагарина, 11' },
+    { value: 'pharm1', label: 'Магазинов на ул. Ленинградская, 85' },
+    { value: 'pharm2', label: 'Магазинов на ул. Мира, 5' },
+    { value: 'pharm3', label: 'Магазинов на ул. Гагарина, 11' },
 ];
 
 // Выпадающий список
@@ -147,7 +147,7 @@ const FeedbackSection = () => {
         if (!topic) newErrors.topic = 'Выберите тему обращения';
         if (!situation) newErrors.situation = 'Выберите типовую ситуацию';
         if (!message || message.trim().length < 10) newErrors.message = 'Опишите проблему (минимум 10 символов)';
-        if (!pharmacy) newErrors.pharmacy = 'Выберите аптеку';
+        if (!pharmacy) newErrors.pharmacy = 'Выберите магазин';
         if (!firstName || firstName.trim().length < 1) newErrors.firstName = 'Введите имя';
         if (!lastName || lastName.trim().length < 1) newErrors.lastName = 'Введите фамилию';
 
@@ -319,11 +319,11 @@ const FeedbackSection = () => {
                     </div>
                 </div>
 
-                {/* Аптека */}
+                {/* Зоомагазин */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="md:col-span-2">
                         <label className='block text-sm font-medium text-gray-700 mb-1'>
-                            Аптека <span className="text-destructive">*</span>
+                            Зоомагазин <span className="text-destructive">*</span>
                         </label>
                         <select
                             value={pharmacy}
@@ -340,7 +340,7 @@ const FeedbackSection = () => {
                         {errors.pharmacy && <p className='text-destructive text-sm mt-1'>{errors.pharmacy}</p>}
                     </div>
                     <div className="md:col-span-1 text-sm text-gray-500 mt-2 py-4 md:mt-0">
-                        Выберите аптеку в списке, с которой связано обращение
+                        Выберите магазин в списке, с которым связано обращение
                     </div>
                 </div>
 

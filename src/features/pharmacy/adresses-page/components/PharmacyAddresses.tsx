@@ -93,7 +93,7 @@ const PharmacyAddressesDesktop = ({
                         ))}
                         {!pharmacies.length && (
                             <div className="flex flex-col justify-center items-center h-full gap-2">
-                                <p className="font-medium text-primary-red text-center text-balance">Аптек по указанному адресу не найдено.</p>
+                                <p className="font-medium text-primary-red text-center text-balance">Магазинов по указанному адресу не найдено.</p>
                             </div>
                         )}
                     </div>
@@ -114,7 +114,7 @@ const PharmacyAddressesDesktop = ({
                     ) : (
                         <div className="flex flex-col justify-center items-center h-full gap-2  pb-2">
                             <Image src={CatWithGlass} alt={"Cat image"}/>
-                            <p className="font-medium text-primary-red">Аптек по указанному адресу не найдено.</p>
+                            <p className="font-medium text-primary-red">Магазинов по указанному адресу не найдено.</p>
                         </div>
                     )}
 
@@ -194,7 +194,7 @@ const PharmacyAddresses = () => {
                     <div className="lg:hidden w-full text-primary-gray flex bg-white-500 h-[48px] rounded-[16px] px-6 py-4 items-center gap-2">
                         <Image src={search} alt="search icon" width={24} height={24} priority />
                         <input
-                            placeholder="Введите адрес аптеки"
+                            placeholder="Введите адрес магазина"
                             type="text"
                             value={searchText}
                             className="w-full outline-none bg-transparent text-black-100"
@@ -219,7 +219,7 @@ const PharmacyAddresses = () => {
                             {!pharmacies.length && (
                                 <div className="flex flex-col justify-center items-center h-full gap-2">
                                     <Image src={CatWithGlass} alt={"Cat image"}/>
-                                    <p className="font-medium text-primary-red text-balance text-center">Аптек по указанному адресу не найдено.</p>
+                                    <p className="font-medium text-primary-red text-balance text-center">Магазинов по указанному адресу не найдено.</p>
                                 </div>
                             )}
                         </div>
@@ -252,7 +252,7 @@ const PharmacyAddresses = () => {
                         ) : (
                             <div className="flex flex-col justify-center items-center h-full w-full gap-2 mx-auto py-2">
                                 <Image src={CatWithGlass} alt={"Cat image"}/>
-                                <p className="font-medium text-primary-red text-center text-balance leading-[120%]">Аптек по указанному адресу не найдено.</p>
+                                <p className="font-medium text-primary-red text-center text-balance leading-[120%]">Магазинов по указанному адресу не найдено.</p>
                             </div>
                         )}
                     </div>

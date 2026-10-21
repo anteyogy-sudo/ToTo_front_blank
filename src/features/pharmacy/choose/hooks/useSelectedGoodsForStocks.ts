@@ -1,11 +1,32 @@
 import { useMemo } from "react";
-import { useCartStore } from "@/stores/useCartStore";
+import { getCartSelectionKey, useCartStore } from "@/stores/useCartStore";
 
 export function useSelectedGoodsForStocks() {
-    const selectedIds = useCartStore(state => state.selectedIds);
-    const items = useCartStore(state => state.items);
+    const cart = useCartStore((state) => state.cart);
+    const selectedItems = useCartStore((state) => state.selectedItems);
+    const items = useCartStore((state) => state.items);
 
+    // Восстанавливает прежний плоский selectedIds (уникальные id) из новой
+    // модели выбора cart.sets[].goods[] + selectedItems[key]
+    const selectedIds = useMemo(() => {
+        if (!cart) return [];
 
+        const ids: number[] = [];
+        const seen = new Set<number>();
+
+        cart.sets.forEach((cartSet) => {
+            cartSet.goods.forEach((product, productIndex) => {
+                if (!selectedItems[getCartSelectionKey(cartSet.id, productIndex)]) return;
+                if (seen.has(product.id)) return;
+                seen.add(product.id);
+                ids.push(product.id);
+            });
+        });
+
+        return ids;
+    }, [cart, selectedItems]);
+
+    // amount берётся из items (запрошенное пользователем количество), как раньше
     const goods = useMemo(
         () =>
             selectedIds.map((id) => ({

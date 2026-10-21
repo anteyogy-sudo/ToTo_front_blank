@@ -81,7 +81,7 @@ const Page = () => {
 
             <div className='md:mt-8 mt-3'>
                 <p className='md:text-[40px] text-[24px] font-bold '>
-                    Почему аптека Антей?
+                    Почему зоомагазин ТоТошка?
                 </p>
 
                 <div className='grid gap-4 pt-8 bg-white-500 rounded-[16px] md:p-6 p-4'>

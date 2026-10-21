@@ -141,7 +141,7 @@ export const Navbar = () => {
 
                             {/* Ссылки */}
                             <ul className="w-fit 1144:flex hidden items-center gap-6">
-                                {/* Как сделать заказ и найти аптеку */}
+                                {/* Как сделать заказ и найти магазин */}
                                 <ListItems
                                     items={NAVBAR_LINKS["row-1"]}
                                     render={(link, index) => (

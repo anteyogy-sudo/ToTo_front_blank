@@ -54,7 +54,7 @@ export const ChoosePharmacyButton = () => {
                             " px-10 bg-blue-lightBlue text-primary-blue shadow-none font-medium"
                     )}
                 >
-                    {confirmedPharmacy ? "Выбрать другую аптеку" : "Выбрать аптеку"}
+                    {confirmedPharmacy ? "Выбрать другой магазин" : "Выбрать магазин"}
                 </Button>
             </DialogTrigger>
 
@@ -64,7 +64,7 @@ export const ChoosePharmacyButton = () => {
             >
                 <DialogHeader className=" flex-row justify-between lg:p-0 p-6 pb-0">
                     <DialogTitle className=" lg:text-[40px] text-[24px] font-bold leading-[100%]">
-                        Выбрать аптеку
+                        Выбрать магазин
                     </DialogTitle>
                     <DialogDescription className=" hidden">
                         Choose a pharmacy description

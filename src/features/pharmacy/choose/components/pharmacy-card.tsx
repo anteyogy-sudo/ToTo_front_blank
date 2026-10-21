@@ -6,7 +6,7 @@ import {usePharmacyStore} from "@/stores/usePharmacyStore";
 import React, {useMemo} from "react";
 import Image from "next/image";
 import AnteyLogo from "@/assets/resources/product/PharmacyAnteyLogo.svg";
-import {useCartStore} from "@/stores/useCartStore";
+import {useCartStore, selectSelectedCartAmount} from "@/stores/useCartStore";
 import greenZap from "@/assets/resources/greenZap.svg"
 import {DisplayProductAvailability} from "@/features/pharmacy/choose/components/display-product-availability";
 import {PharmacyInfo} from "@/features/pharmacy/PharmacyInfo";
@@ -30,7 +30,7 @@ export const PharmacyCard = ({
         setConfirmedPharmacy,
         setOpenChoosePharmacyDialog,
     } = usePharmacyStore();
-    const {selectedCartCount} = useCartStore();
+    const selectedCartCount = useCartStore(selectSelectedCartAmount);
 
     const alreadySelected = useMemo(() => {
         if (!confirmedPharmacy) return false;
@@ -64,7 +64,7 @@ export const PharmacyCard = ({
             <div className=" w-full h-fit flex items-center justify-between gap-4">
                 <p className="flex flex-col font-bold xl:text-[22px] text-[18px] leading-[100%]">
                     <span className="flex gap-1">
-                        Аптека вивАнтей <Image src={AnteyLogo} alt="logo"/>
+                        Зоомагазин ТоТошка <Image src={AnteyLogo} alt="logo"/>
                     </span>
                     <span> {pharmacy.address}</span>
                 </p>
@@ -121,7 +121,7 @@ export const PharmacyCard = ({
                         isBestPrice && "bg-green-500",
                     )}
                 >
-                    Выбрать эту аптеку
+                    Выбрать этот магазин
                 </Button>
             ) : null}
         </div>

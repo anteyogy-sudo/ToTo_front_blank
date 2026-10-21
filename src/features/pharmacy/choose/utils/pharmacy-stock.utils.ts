@@ -5,7 +5,7 @@ export function flattenPharmacyGoods(pharmacy: PharmacyStockProps): CartProductP
     return pharmacy.sets.flatMap((set) => set.goods);
 }
 
-/** Сколько позиций из корзины полностью закрыты остатком в аптеке */
+/** Сколько позиций из корзины полностью закрыты остатком в магазине */
 export function getPharmacyAvailableCount(pharmacy: PharmacyStockProps): number {
     const outOfStockIds = new Set(pharmacy.outOfStocks.map((item) => item.id));
     return flattenPharmacyGoods(pharmacy).filter((good) => !outOfStockIds.has(good.id)).length;

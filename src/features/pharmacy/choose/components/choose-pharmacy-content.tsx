@@ -76,7 +76,7 @@ export const ChoosePharmacyContent = ({ selectedMode, setSelectedMode }: Props) 
                     <div className="max-w-[562px] w-full max-h-[48px] text-primary-gray flex bg-primary-light-white h-full rounded-[16px] px-2  items-center gap-2">
                         <Image src={search} alt="search icon" width={24} height={24} priority />
                         <input
-                            placeholder="Введите адрес аптеки"
+                            placeholder="Введите адрес магазина"
                             type="text"
                             className="w-full outline-none bg-transparent text-black-100"
                             onChange={(e) => {
@@ -183,7 +183,7 @@ export const ChoosePharmacyContent = ({ selectedMode, setSelectedMode }: Props) 
             <div className="lg:hidden flex w-full max-h-[48px] text-primary-gray bg-white-500 py-6 h-full rounded-[16px] px-6  items-center gap-2">
                 <Image src={search} alt="search icon" width={24} height={24} priority />
                 <input
-                    placeholder="Введите адрес аптеки"
+                    placeholder="Введите адрес магазина"
                     type="text"
                     className="w-full outline-none bg-transparent text-black-100"
                     onChange={(e) => {
@@ -195,7 +195,7 @@ export const ChoosePharmacyContent = ({ selectedMode, setSelectedMode }: Props) 
             { status === "pending" ? (
                 <div className="flex flex-col h-full w-full justify-center items-center  ">
                     <Image src={CatWithGlass} alt="Searching pharmacies, please wait"/>
-                    <span className="font-medium text-primary-blue">Аптеки <b>загружаются</b>, подождите...</span>
+                    <span className="font-medium text-primary-blue">Магазины <b>загружаются</b>, подождите...</span>
                 </div>
             ) : (
                 <>
@@ -224,7 +224,7 @@ export const ChoosePharmacyContent = ({ selectedMode, setSelectedMode }: Props) 
                     ) : (
                         <div className="flex flex-col h-full w-full justify-center items-center  ">
                             <Image src={NoMap} alt="No items for map"/>
-                            <span className="font-medium text-primary-blue">Аптек <b>не найдено</b></span>
+                            <span className="font-medium text-primary-blue">Магазинов <b>не найдено</b></span>
                         </div>
                     )}
                 </>

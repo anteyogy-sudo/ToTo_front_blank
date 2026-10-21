@@ -28,7 +28,7 @@ const MaintenancePage = ({redirect_mobile}: Props) => {
                                 <p>Уважаемые покупатели!</p>
                                 <p>На сайте ведутся технические работы</p>
                                 <p>Приносим свои извинения за временные неудобства</p>
-                                <p className={"mt-[30px] md:mt-[40px]"}>Вы можете заказать через приложение АптекаАнтей</p>
+                                <p className={"mt-[30px] md:mt-[40px]"}>Вы можете заказать через приложение ЗоомагазинТоТошка</p>
                             </div>
                             <div>
                                 <Image src={QrCode} width={205} height={205} alt='QR code' className='max-md:w-[150px] md:w-[182px] 1144:w-[205px] bg-white-500 rounded-[8px]' />

@@ -6,21 +6,18 @@ import { useAuthDialogStore } from "@/stores/useAuthDialogStore";
 import { useUserStore } from "@/stores/useUserStore";
 import { useRouter } from "next/navigation";
 import {useMemo, useState} from "react";
-import { useCartStore } from "@/stores/useCartStore";
+import { useCartStore, selectSelectedCartAmount } from "@/stores/useCartStore";
 import { usePharmacyStore } from "@/stores/usePharmacyStore";
 import {toast} from "sonner";
 import {api} from "@/configs/axios";
+import { useSelectedGoodsForStocks } from "@/features/pharmacy/choose/hooks/useSelectedGoodsForStocks";
 
 export const PlaceAnOrderButton = () => {
   const { user, token } = useUserStore();
   const { setIsOpenLoginDialog, setWithRedirect } = useAuthDialogStore();
-  const selectedIds = useCartStore(state => state.selectedItems)
+  const { selectedIds, goods } = useSelectedGoodsForStocks();
   const products = useCartStore(state => state.items);
-  const getSelectedItems = useCartStore(state => state.selectedItems);
-  const selectedCart = useCartStore(state => state.selectedCart)
-
-  const selectedItems = getSelectedItems();
-
+  const selectedCartAmount = useCartStore(selectSelectedCartAmount);
   const { confirmedPharmacy } = usePharmacyStore();
   const router = useRouter();
 
@@ -29,9 +26,9 @@ export const PlaceAnOrderButton = () => {
       !selectedIds.length ||
       !products.length ||
       !confirmedPharmacy ||
-      !selectedCart?.total?.amount
+      !selectedCartAmount
     );
-  }, [confirmedPharmacy, selectedIds, products.length, selectedCart]);
+  }, [confirmedPharmacy, selectedIds, products.length, selectedCartAmount]);
 
   const [loading, setLoading] = useState(false);
 
@@ -48,7 +45,7 @@ export const PlaceAnOrderButton = () => {
       setLoading(true);
 
       const { data } = await api.put("/orders",
-          {goods: selectedItems, store: confirmedPharmacy?.id},
+          {goods, store: confirmedPharmacy?.id},
           {headers: {Authorization: `Bearer ${token}`}}
       )
 

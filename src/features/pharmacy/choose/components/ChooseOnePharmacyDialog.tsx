@@ -12,7 +12,7 @@ import {Button} from "@/components/ui/button";
 import React, {useMemo} from "react";
 import {X} from "lucide-react";
 import {PharmacyStockProps} from "@/types/pharmacy.types";
-import {useCartStore} from "@/stores/useCartStore";
+import { useCartStore, selectSelectedCartAmount } from "@/stores/useCartStore";
 
 interface Props {
     pharmacies: PharmacyStockProps[] | undefined;
@@ -29,7 +29,7 @@ export const ChooseOnePharmacyDialog = ({ pharmacies }: Props) => {
         setOpenChooseOnePharmacyDialog,
     } = usePharmacyStore();
 
-    const { selectedCartCount } = useCartStore();
+    const selectedCartCount = useCartStore(selectSelectedCartAmount);
 
     const handleClose = () => {
         setOpenChooseOnePharmacyDialog(false);
@@ -73,7 +73,7 @@ export const ChooseOnePharmacyDialog = ({ pharmacies }: Props) => {
                             </button>
 
                             <p className="font-bold max-w-[280px] w-full bg-white-500 flex flex-col text-[24px] leading-[100%] text-black-100 gap-1">
-                                <span>Аптека вивАнтей</span>
+                                <span>Зоомагазин ТоТошка</span>
                                 <span>{selectedPharmacyStock.address}</span>
                             </p>
 
@@ -105,14 +105,14 @@ export const ChooseOnePharmacyDialog = ({ pharmacies }: Props) => {
 
                             {confirmedPharmacy?.id === selectedPharmacyStock.id ? (
                                 <p className="text-xl font-bold text-primary-blue">
-                                    Аптека уже выбрана
+                                    Магазин уже выбран
                                 </p>
                             ) : (
                                 <Button
                                     onClick={() => onConfirmPharmacy(selectedPharmacyStock)}
                                     className="w-full h-[44px] rounded-2xl text-[18px] font-bold leading-[120%]"
                                 >
-                                    Выбрать эту аптеку
+                                    Выбрать этот магазин
                                 </Button>
                             )}
                         </div>

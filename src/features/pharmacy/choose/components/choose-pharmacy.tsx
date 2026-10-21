@@ -13,7 +13,7 @@ export const ChoosePharmacy = () => {
     return (
         <div className="w-full h-fit flex flex-col gap-6 p-6 rounded-2xl bg-white-500 shadow-sm">
             <p className="font-bold md:text-[24px] text-[20px] leading-[120%]">
-                Аптека для получения
+                Магазин для получения
             </p>
 
             { confirmedPharmacy && (

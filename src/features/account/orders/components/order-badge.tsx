@@ -16,13 +16,13 @@ export const OrderBadge = ({ variant, device }: Props) => {
     const statusMap: Record<StatusCode, { label: string; color: string }> = {
         "0": { label: "В обработке", color: "bg-gold-500" },
         "100": { label: "Новый заказ", color: "bg-blue-medium" },
-        "200": { label: "Принят аптекой", color: "bg-blue-medium" },
+        "200": { label: "Принят магазином", color: "bg-blue-medium" },
         "213": { label: "Ожидает выдачи", color: "bg-green-500" },
         "210": { label: "Получен", color: "bg-primary-blue" },
-        "201": { label: "Частично принят аптекой", color: "bg-green-500" },
+        "201": { label: "Частично принят магазином", color: "bg-green-500" },
         "205": { label: "Истек срок хранения", color: "bg-gray-500" },
-        "202": { label: "Отменен аптекой", color: "bg-primary-red" },
-        "212": { label: "Отменен аптекой", color: "bg-primary-red" },
+        "202": { label: "Отменен магазином", color: "bg-primary-red" },
+        "212": { label: "Отменен магазином", color: "bg-primary-red" },
         "111": { label: "Отменен клиентом", color: "bg-primary-red" },
         "211": { label: "Отменен клиентом", color: "bg-primary-red" },
     };

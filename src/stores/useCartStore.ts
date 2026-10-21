@@ -64,6 +64,32 @@ export const getCartSelectionKey = (setId: number | null, productIndex: number):
     return `set:${setId}:${productIndex}`;
 };
 
+// Селектор: количество выбранных товаров (в штуках) с учётом выбранных комплектов.
+// Правила совпадают с calculateSelectedCartTotals в cart-Order.tsx.
+export const selectSelectedCartAmount = (state: CartStore): number => {
+    const { cart, selectedItems } = state;
+    if (!cart) return 0;
+
+    return cart.sets.reduce((sum, cartSet) => {
+        if (cartSet.id !== null) {
+            const isSetSelected =
+                cartSet.goods.length > 0 &&
+                cartSet.goods.every(
+                    (_product, productIndex) => selectedItems[getCartSelectionKey(cartSet.id, productIndex)]
+                );
+            return isSetSelected ? sum + (Number(cartSet.total?.amount) || 0) : sum;
+        }
+
+        return cartSet.goods.reduce(
+            (inner, product, productIndex) =>
+                selectedItems[getCartSelectionKey(null, productIndex)]
+                    ? inner + (Number(product.amount ?? product.required ?? 0) || 0)
+                    : inner,
+            sum
+        );
+    }, 0);
+};
+
 export const useCartStore = create<CartStore>()(
     persist(
         (set, get) => {

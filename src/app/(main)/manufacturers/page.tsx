@@ -17,7 +17,7 @@ const Page = () => {
 
             <h4 className='font-bold lg:text-[40px] lg:mt-10 mt-2 text-[32px] text-black-100 leading-[100%]'>Производителям </h4>
 
-            <div className='lg:mt-10 mt-6'>
+            {/* <div className='lg:mt-10 mt-6'>
                 <p className='font-bold lg:text text-black-100 lg:text-[32px] text-[18px] lg:leading-[100%] leading-[120%]'>Уважаемые производители, </p>
 
                 <p className='font-normal text-black-700 lg:mt-4 mt-2 lg:text-[18px] text-[16px] lg:leading-[150%] leading-[120%] '>
@@ -49,6 +49,11 @@ const Page = () => {
                 <p className='font-normal text-black-700 lg:mt-4 mt-2 lg:text-[18px] text-[16px] lg:leading-[150%] leading-[120%] '>
                     С уважением и надеждой на будущее сотрудничество, <br/>
                     Команда &#34;Аптека Антей&#34;
+                </p>
+            </div> */}
+            <div>
+                <p>
+                    Рекламная информация
                 </p>
             </div>
         </Container>

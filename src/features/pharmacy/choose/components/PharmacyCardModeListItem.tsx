@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { PrimaryBlueArrow } from "@/icons/primary-blue-arrow";
 import { PharmacyStockProps } from "@/types/pharmacy.types";
 import { usePharmacyStore } from "@/stores/usePharmacyStore";
-import { useCartStore } from "@/stores/useCartStore";
+import { useCartStore, selectSelectedCartAmount } from "@/stores/useCartStore";
 import greenZap from "@/assets/resources/greenZap.svg";
 import {PharmacyInfo} from "../../PharmacyInfo";
 
@@ -23,7 +23,7 @@ const PharmacyCardModeListItem = ({
     onSelectPharmacy,
 }: Props) => {
     const { confirmedPharmacy, selectedPharmacy } = usePharmacyStore();
-    const { selectedCartCount } = useCartStore();
+    const selectedCartCount = useCartStore(selectSelectedCartAmount);
 
     const alreadySelected = useMemo(() => {
         if (!confirmedPharmacy) return false;

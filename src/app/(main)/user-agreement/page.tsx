@@ -14,7 +14,7 @@ const Page = () => {
                 </div>
             </nav>
 
-            <main className="flex flex-col bg-white-500/90 lg:p-10 p-7 lg:rounded-[48px] rounded-[34px] gap-4 lg:text-[18px] text-[16px] lg:leading-[150%] leading-[120%] font-normal text-black-700">
+            {/* <main className="flex flex-col bg-white-500/90 lg:p-10 p-7 lg:rounded-[48px] rounded-[34px] gap-4 lg:text-[18px] text-[16px] lg:leading-[150%] leading-[120%] font-normal text-black-700">
                 <h4 className='flex text-wrap font-bold lg:text-[40px] text-[32px] leading-[100%] text-black-500'>Пользовательское соглашение</h4>
 
                 <p>
@@ -154,6 +154,12 @@ const Page = () => {
                     1083525014099 <br/>
 
                     Действующая редакция Политики от 08.07.2021 г.
+                </p>
+            </main> */}
+            <main>
+                <p>
+                  Юридическая информация: <br/>
+                  Зоомагазин Тотошка
                 </p>
             </main>
         </Container>

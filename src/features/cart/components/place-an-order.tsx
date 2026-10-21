@@ -25,7 +25,7 @@
 //       {/*    <Input*/}
 //       {/*      id="promocode"*/}
 //       {/*      className=" h-full w-full border-none focus-visible:ring-0 p-0 placeholder:text-black-100/20 text-[18px]"*/}
-//       {/*      placeholder="Сначала выберите аптеку"*/}
+//       {/*      placeholder="Сначала выберите магазин"*/}
 //       {/*    />*/}
 //       {/*    <button className=" min-w-10 h-10 aspect-square rounded-[8px] flex items-center justify-center bg-[#12121208] text-black-100/40">*/}
 //       {/*      <ArrowSVG />*/}
