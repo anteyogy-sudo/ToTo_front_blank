@@ -604,7 +604,7 @@ export const NavSearchbar = () => {
 
                     <Input
                         ref={inputRef}
-                        placeholder="Например: Терафлю"
+                        placeholder="Например: Ошейник от клещей"
                         className="h-full border-none bg-transparent px-0 text-base leading-[120%] md:text-[16px] focus-visible:ring-0"
                         style={
                             isSearchActive
@@ -672,7 +672,7 @@ export const NavSearchbar = () => {
                         className="shrink-0"
                     />
                     <span className="truncate text-base leading-[120%] text-gray-400">
-                    Например: Терафлю
+                    Например: Ошейник от клещей
                     </span>
                 </button>
 
@@ -708,7 +708,7 @@ export const NavSearchbar = () => {
 
                                     <Input
                                         ref={inputRef}
-                                        placeholder="Например: Терафлю"
+                                        placeholder="Например: Ошейник от клещей"
                                         className="w-full flex-1 border-none bg-transparent px-0 text-base leading-[120%] focus-visible:ring-0"
                                         style={{ backgroundColor: "transparent" }}
                                         value={query}

@@ -1,6 +1,7 @@
 "use client";
 
-import logotype from "@/assets/icons/logotype.svg";
+
+import logotype from "@/assets/icons/pharamacy-antey/toto-logo.svg";
 import {
   Dialog,
   DialogContent,
