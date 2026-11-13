@@ -36,3 +36,20 @@ yarn-error.log*
 next-env.d.ts
 /test.http
 /.idea/
+
+# Local env (all variants)
+.env
+.env.local
+.env.*.local
+.env.*.rc
+
+# IDE
+.vscode/**
+!.vscode/settings.json
+.idea/**
+!.idea/workspace.xml
+!.idea/inspectionProfiles/
+
+# Cache
+node_modules/.cache
+.next/cache

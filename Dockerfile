@@ -1,6 +1,6 @@
 FROM node:lts-alpine AS build
 
-ARG NEXT_PUBLIC_BRAND=antey
+ARG NEXT_PUBLIC_BRAND=zoo
 
 WORKDIR /app
 

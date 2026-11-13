@@ -8,7 +8,7 @@
  */
 export type BrandId = "antey" | "zoo";
 
-const RAW_BRAND = process.env.NEXT_PUBLIC_BRAND ?? "antey";
+const RAW_BRAND = process.env.NEXT_PUBLIC_BRAND ?? "zoo";
 
 export const BRAND: BrandId = RAW_BRAND === "zoo" ? "zoo" : "antey";
 
