@@ -1,27 +1,21 @@
-version: "3"
+
 
 services:
-    frontend:
-        build:
-            context: .
-            args:
-                NEXT_PUBLIC_BRAND: ${NEXT_PUBLIC_BRAND:-zoo}
-        container_name: zoo
-        restart: unless-stopped
-        tty: true
-        environment:
-            NEXT_PUBLIC_BRAND: ${NEXT_PUBLIC_BRAND:-zoo}
-        expose:
-            - "3000"
-
-        networks:
-            - traefik
-        labels:
-            - traefik.enable=true
-            - traefik.http.routers.frontend.rule=Host(`front.netvol.org`)
-            - traefik.http.routers.frontend.entrypoints=web
-            - traefik.http.services.frontend.loadbalancer.server.port=3000
-
-networks:
-    traefik:
-        external: true
+  frontend:
+    build:
+      context: .
+      args:
+        NEXT_PUBLIC_BRAND: ${NEXT_PUBLIC_BRAND:-zoo}
+        API_URL: https://api.netvol.org
+        NEXT_PUBLIC_API_URL: https://api.netvol.org
+        YANDEX_API_KEY: 841198fb-e942-4b66-bdff-19bd7c578805
+    container_name: zoo
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      NEXT_PUBLIC_BRAND: ${NEXT_PUBLIC_BRAND:-zoo}
+      API_URL: https://api.netvol.org
+      NEXT_PUBLIC_API_URL: https://api.netvol.org
+      YANDEX_API_KEY: 841198fb-e942-4b66-bdff-19bd7c578805
+    ports:
+      - "3000:3000"

@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        // unoptimized: true,
         remotePatterns: [
             { hostname: "mp2.aptekaantey.ru", protocol: "https" },
             { hostname: "sklad.ms", protocol: "https" },
-            { hostname: 'cdn.aptekaantey.ru', protocol: 'https' },
-            { hostname: 'api.netvol.org', protocol: 'https' },
+            { hostname: "cdn.aptekaantey.ru", protocol: "https" },
+            { hostname: "api.netvol.org", protocol: "https" },
         ],
     },
     env: {
@@ -19,3 +18,5 @@ const nextConfig = {
 };
 
 export default nextConfig;
+
+

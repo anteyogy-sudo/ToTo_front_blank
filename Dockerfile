@@ -1,26 +1,35 @@
+
+
 FROM node:lts-alpine AS build
 
 ARG NEXT_PUBLIC_BRAND=zoo
+ARG API_URL=https://api.netvol.org
+ARG NEXT_PUBLIC_API_URL=https://api.netvol.org
+ARG YANDEX_API_KEY
+
+ENV NEXT_PUBLIC_BRAND=$NEXT_PUBLIC_BRAND
+ENV API_URL=$API_URL
+ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
+ENV YANDEX_API_KEY=$YANDEX_API_KEY
 
 WORKDIR /app
 
 COPY package*.json ./
-
 RUN npm ci
 
 COPY . .
-
-RUN NEXT_PUBLIC_BRAND=$NEXT_PUBLIC_BRAND npm run build
+RUN npm run build
 
 FROM node:lts-alpine AS runner
 
 WORKDIR /app
 
-COPY --from=build /app/.next ./.next
-COPY --from=build /app/next.config.mjs ./
-COPY --from=build /app/package*.json ./
+ENV NODE_ENV=production
 
-RUN npm ci --only=production
+COPY --from=build /app/.next ./.next
+COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/package*.json ./
+COPY --from=build /app/next.config.mjs ./
 
 EXPOSE 3000
 

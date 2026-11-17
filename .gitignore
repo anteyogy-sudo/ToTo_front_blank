@@ -53,3 +53,6 @@ next-env.d.ts
 # Cache
 node_modules/.cache
 .next/cache
+
+# Deploy
+deploy.ps1
