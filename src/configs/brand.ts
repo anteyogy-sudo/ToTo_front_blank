@@ -69,14 +69,14 @@ const BRANDS: Record<BrandId, BrandConfig> = {
         email: "TODO@example.ru",
         aboutPath: "/about",
         stores: {
-            googlePlay: "TODO",
-            ruStore: "TODO",
-            appStore: "TODO",
-            appGallery: "TODO",
+            googlePlay: "https://play.google.com",
+            ruStore: "https://www.rustore.ru",
+            appStore: "https://apps.apple.com",
+            appGallery: "https://appgallery.huawei.ru",
         },
         social: {
-            vk: "TODO",
-            dzen: "TODO",
+            vk: "https://vk.com",
+            dzen: "https://dzen.ru",
         },
     },
 };
